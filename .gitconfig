@@ -1,0 +1,58 @@
+# List Branches
+# -----------------------------------------------------------------------------------------
+# $ git branch          // List only local branches
+# $ git branch - r      // List only remote branches
+# $ git branch - a      // List remote and local branches
+
+# Delete Branch
+# -----------------------------------------------------------------------------------------
+# $ git branch -d {BranchName}              // Delete the local branch
+# $ git push origin --delete {BranchName}   // Delete the remote branch
+
+# Create Branch and Push to Origin
+# -----------------------------------------------------------------------------------------
+# $ git checkout -b {BranchName}
+# $ git push -u origin {BranchName}
+
+# Merge branch into develop
+# -----------------------------------------------------------------------------------------
+# $ git checkout develop
+# $ git pull
+# $ git checkout {branch name}
+# $ git submodule update
+# $ git merge develop
+# $ git submodule update
+# build and login
+# run unit tests
+# $ git push (changes merged from develop)
+# $ git checkout develop
+# $ git merge {branch name} --no-ff
+# $ git push
+
+# Pull Submodules
+# -----------------------------------------------------------------------------------------
+# $ git submodule foreach git checkout master
+# $ git submodule foreach git pull
+
+# Commit Submodule
+# -----------------------------------------------------------------------------------------
+# $ cd path/to/submodule
+# $ git add {stuff}
+# $ git commit -m "comment"
+# $ git push
+# $ cd /main/project
+# $ git add path/to/submodule
+# $ git commit -m "updated my submodule"
+# $ git push
+
+# Unlink of file failed
+# -----------------------------------------------------------------------------------------
+# $ git gc
+
+# Only push to the branch on which you are working
+# -----------------------------------------------------------------------------------------
+# $ git config --global push.default current
+
+# Show\Edit gitconfig
+# -----------------------------------------------------------------------------------------
+# $ git config --gloabl --edit
