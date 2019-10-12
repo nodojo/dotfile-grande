@@ -674,3 +674,7 @@
 # $ cd <root-of-your-main-project>
 # $ git add <path-to-submodule>
 # $ git commit -m "submodule updated"
+
+# Find text pattern within all C# files recursively
+# -----------------------------------------------------------------------------------------
+# $ grep -r --include=\*.cs "pattern" .
