@@ -126,3 +126,42 @@
  ### **Display/Configure network's interface**
 -------------------------------------------------------------
 - $ ifconfing
+
+
+
+### **From: 15 Little Known Unix Commands**
+
+ ### **Network diagnostic tool that combines tracerout and ping**
+-------------------------------------------------------------
+- $ mtr `<hostname>`
+- $ mtr --report google.com
+
+ ### **Omit command from command log in ~/.bash_history**
+-------------------------------------------------------------
+- $ `<space>` `<command>`
+
+ ### **Generate random numbers or text**
+-------------------------------------------------------------
+- $ jot
+- $ jot -r `<number_of_numbers>` `<starting_number>`
+
+ ### **Show the amount of available disk space**
+-------------------------------------------------------------
+- $ df
+
+ ### **Display a calendar with the current date highlighted**
+-------------------------------------------------------------
+- $ cal
+
+ ### **Provides a range of utilities (ex: create, copy, merge, display, etc.)**
+-------------------------------------------------------------
+- $ tac
+
+ ### **Repeat a word to the output**
+-------------------------------------------------------------
+- $ yes `<word_to_repeat>`
+
+ ### **Add line numbers to terminal output**
+-------------------------------------------------------------
+- $ nl
+- $ cat .gitconfig | nl
