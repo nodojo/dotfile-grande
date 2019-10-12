@@ -20,6 +20,14 @@
 -------------------------------------------------------------
 - $ brew upgrade go
 
+ ### **Output go env variable paths to console**
+-------------------------------------------------------------
+- $ go env
+
+ ### **Find out if the function you're calling is a loop is inlined**
+-------------------------------------------------------------
+- $ go build -gcflags -m
+
 
 
 
