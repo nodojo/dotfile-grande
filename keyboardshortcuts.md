@@ -27,7 +27,7 @@ $ cmd + W
 
 **Open link in new tab:**
 ```bash
-$ cmd + click
+$ cmd + CLICK
 ```
 
 
@@ -80,12 +80,12 @@ $ cmd + shift + 4
 
 **Take a screenshot of just the screen the cursor is on:**
 ```
-$ cmd + shift + 4 then space
+$ cmd + shift + 4 AND THEN space
 ```
 
 **Open sound preference modal:**
 ```bash
-$ option + any volume key
+$ option + ANY VOLUME KEY
 ```
 
 **Open spotlight search:**
