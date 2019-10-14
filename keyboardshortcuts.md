@@ -49,17 +49,17 @@ $ cmd + I
 ```
 
 **Move up in the hierarchy in the finder:**
-```bash
+```
 $ cmd + cmd + ↑ + >
 ```
 
 **Move down in the hierarchy in the finder:**
-```bash
+```
 $ cmd + ↓ + >
 ```
 
 **Move cursor to first (top) file in a directory:**
-```bash
+```
 $ shift + ~
 ```
 
@@ -74,12 +74,12 @@ $ cmd + option + L
 ```
 
 **Turn cursor into crosshair to screenshot selection:**
-```bash
+```
 $ cmd + shift + 4
 ```
 
 **Take a screenshot of just the screen the cursor is on:**
-```bash
+```
 $ cmd + shift + 4 then space
 ```
 
