@@ -11,10 +11,26 @@
 
 ## **Chrome**
 ---------------
-#### Open development console in chrome:   <pre><code><strong>cmd + option + I</strong></code></pre>
-#### Bookmark the page you are currently on: <pre><code><strong>cmd + D</strong></code></pre>
-#### Close the tab you are currently on: <pre><code><strong>cmd + W</strong></code></pre>
-#### Open link in new tab<pre><code><strong>cmd + click</strong></code></pre>
+
+**Open development console in chrome:**
+```bash
+$ cmd + option + I
+```
+
+**Bookmark the page you are currently on:**
+```bash
+$ cmd + D
+```
+
+**Close the tab you are currently on:**
+```bash
+$ cmd + W
+```
+
+**Open link in new tab:**
+```bash
+$ cmd + click
+```
 
 
 ## **Mac OS**
@@ -39,4 +55,7 @@
 
 ## **Webstorm**
 ---------------
-#### Format selection in Webstorm:     <pre><code><strong>cmd + option + L</strong></code></pre>
+**Format selection in Webstorm:**
+```bash
+$ cmd + option + L
+```
