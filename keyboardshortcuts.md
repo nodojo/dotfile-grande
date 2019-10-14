@@ -34,7 +34,7 @@ $ cmd + click
 ## **Mac OS**
 
 **Toggle hidden file visibility:**
-```bash
+```
 $ cmd + shift + .
 ```
 
