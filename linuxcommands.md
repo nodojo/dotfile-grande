@@ -13,7 +13,7 @@
 - $ man `<excutablename>`
 - $ man ascii       // show commands offered for ascii
 - $ man units       // show commands offered for units
-- $ man man         // show commands offered for man
+- $ man man         // show commands offered for ma
 
 ### **Show how long the system has been running**
 -------------------------------------------------------------
