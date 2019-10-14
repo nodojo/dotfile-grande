@@ -168,7 +168,7 @@ $ pmap -x pid_number
 ```
 
 **Get the PID for a process:**
-```sh
+```
 $ ps aux | grep process_name
 
 // Example:
@@ -194,7 +194,7 @@ $ ifconfig
 ```sh
 $ mtr host_name
 
-//Example:
+// Example:
 $ mtr --report google.com
 ```
 
@@ -234,7 +234,7 @@ $ yes word_to_repeat
 ```
 
 **Add line numbers to terminal output:**
-```sh
+```
 $ nl
 
 // Example:
