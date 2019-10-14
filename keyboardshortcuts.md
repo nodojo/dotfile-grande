@@ -10,7 +10,6 @@
 
 
 ## **Chrome**
----------------
 
 **Open development console in chrome:**
 ```bash
