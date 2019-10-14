@@ -141,9 +141,9 @@ $ echo string_to_copy | pbcopy
 ```
 
 **Copy html from webpage to system clipboard:**
-```sh
+```
 // Example:
-$ curl https://stackoverflow.com/$ | pbcopy
+$ curl https://stackoverflow.com/ | pbcopy
 ```
 
 **Compare two file byte by byte:**
