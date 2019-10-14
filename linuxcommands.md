@@ -188,7 +188,7 @@ $ wget path_to_file
 $ ifconfig
 ```
 
-### **Source: 15 Little Known Unix Commands**
+>## **Source: 15 Little Known Unix Commands**
 
 **Network diagnostic tool that combines tracerout and ping:**
 ```sh
@@ -243,7 +243,7 @@ $ cat .gitconfig | nl
 
 ### **Source: https://github.com/ericdrowell/CheatSheetWorld/**
 
-> ## File System
+>## File System
 
 **List items in current directory:**
 ```sh
@@ -360,7 +360,7 @@ $ vim file_name
 $ alias name 'command'
 ```
 
-> ## System
+>## System
 
 **Shut down machine:**
 ```sh
@@ -402,7 +402,7 @@ $ whereis app
 $ which app
 ```
 
-> ## Process Management
+>## Process Management
 
 **Display your currently active processes:**
 ```sh

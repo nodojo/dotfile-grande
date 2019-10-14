@@ -33,7 +33,7 @@ $ go env
 $ go build -gcflags -m
 ```
 
-> ## Various Additional Notes
+>## Various Additional Notes
 
 **Enable the use of go modules in GoLand:**
 ```
