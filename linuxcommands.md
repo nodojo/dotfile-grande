@@ -100,6 +100,14 @@
 -------------------------------------------------------------
 - $ echo
 
+ ### **Copy string to system clipboard from the terminal**
+-------------------------------------------------------------
+- $ echo `stringtocopy` | pbcopy
+
+ ### **Copy html from webpage to system clipboard from the terminal**
+-------------------------------------------------------------
+- $ curl `https://stackoverflow.com/$` | pbcopy
+
  ### **Compare two file byte by byte**
 -------------------------------------------------------------
 - $ cmp
