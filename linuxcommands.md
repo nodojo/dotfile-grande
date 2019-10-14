@@ -8,168 +8,230 @@
 
 # **From: 25 Linux Commands for System Admins**
 
-### **Show information about available commands**
--------------------------------------------------------------
-- $ man `<excutablename>`
-- $ man ascii       // show commands offered for ascii
-- $ man units       // show commands offered for units
-- $ man man         // show commands offered for man
 
-### **Show how long the system has been running**
--------------------------------------------------------------
-- $ uptime
+**Show information about available commands:**
+```
+$ man + name_of_program_goes_here
 
-### **Show who is logged in to your system and what they are currently doing**
--------------------------------------------------------------
-- $ w
+// Examples
+$ man ascii                                     // show commands offered for ascii
+$ man units                                     // show commands offered for units
+$ man man                                       // show commands offered for man
+```
 
-### **Show username(s) of user(s) currently logged in to your system**
--------------------------------------------------------------
-- $ users
+**Show how long the system has been running:**
+```sh
+$ uptime
+```
 
-### **Print username of user you're currently logged in as**
--------------------------------------------------------------
-- $ whoami
+**Show who is logged in to your system and what they are currently doing:**
+```sh
+$ w
+```
 
-### **Find and output search query along with surrounding text**
--------------------------------------------------------------
-- $ grep
-- $ grep -r "facebook"      // search recursively
-- $ grep -r -l "facebook"   // output filenames instead of text
+**Show username(s) of user(s) currently logged in to your system:**
+```sh
+$ users
+```
 
-### **Reduce length of output (if too verbose)**
--------------------------------------------------------------
-- $ less
+**Print username of user you're currently logged in as:**
+```sh
+$ whoami
+```
 
-### **Provides helpers to display, copy, or combine text**
--------------------------------------------------------------
-- $ cat .gitignore
+**Find and output search query along with surrounding text:**
+```sh
+$ grep
 
-### **Print absolute path of current working directory**
--------------------------------------------------------------
-- $ pwd
+// Examples
+$ grep -r "facebook"                            // search recursively
+$ grep -r -l "facebook"                         // output filenames instead of text
+```
 
-### **Connect to a remote server**
--------------------------------------------------------------
-- $ ssh
-- $ ssh remote_host
-- $ ssh remote_username@remote_host
+**Reduce length of output (if too verbose):**
+```sh
+$ less
+```
 
-### **Copy files securely and remotely over servers**
--------------------------------------------------------------
-- $ scp
+**Provides helpers to display, copy, or combine text:**
+```sh
+$ cat .gitignore
+```
 
-### **Run any command as a superuser(root)**
--------------------------------------------------------------
-- $ sudo
+**Print absolute path of current working directory:**
+```
+$ pwd
+```
 
-### **Can be used to perform tasks from various services**
--------------------------------------------------------------
-- $ service
-- $ service apache restart
+**Connect to a remote server:**
+```sh
+$ ssh
 
-### **Find files on your system by name**
--------------------------------------------------------------
-- $ locate
+// Examples
+$ ssh remote_host
+$ ssh remote_username@remote_host
+```
 
-### **Change file permissions**
--------------------------------------------------------------
-- $ chmod
+**Copy files securely and remotely over servers:**
+```sh
+$ scp
+```
 
-### **Change ownership of a file to a user or user group**
--------------------------------------------------------------
-- $ chown
+**Run any command as a superuser(root):**
+```sh
+$ sudo
+```
 
-### **Kill a process**
--------------------------------------------------------------
-- $ pkill
+**Can be used to perform tasks from various services:**
+```sh
+$ service
 
-### **Manage cron jobs**
--------------------------------------------------------------
-- $ crontab
-- $ crontab -l
+// Example
+$ service apache restart
+```
 
-### **Assign a shortened name to an existing command**
--------------------------------------------------------------
-- $ alias
-- $ alias mycmd='cat requirements.txt'
+**Find files on your system by name:**
+```sh
+$ locate
+```
 
- *(must be defined in an .--rc file(.bashrc, .zshrc, etc.) to save for later use)*
+**Change file permissions:**
+```sh
+$ chmod
+```
 
- ### **Output text**
--------------------------------------------------------------
-- $ echo
+**Change ownership of a file to a user or user group:**
+```sh
+$ chown
+```
 
- ### **Copy string to system clipboard from the terminal**
--------------------------------------------------------------
-- $ echo `stringtocopy` | pbcopy
+**Kill a process:**
+```sh
+$ pkill
+```
 
- ### **Copy html from webpage to system clipboard from the terminal**
--------------------------------------------------------------
-- $ curl `https://stackoverflow.com/$` | pbcopy
+**Manage cron jobs:**
+```
+$ crontab
+$ crontab -l                                    // List jobs
+```
 
- ### **Compare two file byte by byte**
--------------------------------------------------------------
-- $ cmp
-- $ cmp firstfile.txt secondfile.txt
+**Assign a shortened name to an existing command:**
 
- ### **Mount a file system**
--------------------------------------------------------------
-- $ mount
+**(must be defined in an .--rc file(.bashrc, .zshrc, etc.) to save for later use)*
+```
+$ alias
 
- ### **Display the memory map for a process**
--------------------------------------------------------------
-- $ pmap
-- $ pmap -x `<pid>`
+// Example
+$ alias mycmd='cat requirements.txt'
+```
 
- ### **Get a process' id (pid)**
--------------------------------------------------------------
-- $ ps aux | grep `<processname>`
+**Output text:**
+```
+$ echo
+```
 
- ### **Download a file from a network**
--------------------------------------------------------------
-- $ wget
-- $ wget `<pathtofile>`
+**Copy string to system clipboard:**
+```
+$ echo string_to_copy_goes_here | pbcopy
+```
 
- ### **Display/Configure network's interface**
--------------------------------------------------------------
-- $ ifconfing
+**Copy html from webpage to system clipboard:**
+```sh
+// Example
+$ curl https://stackoverflow.com/$ | pbcopy
+```
 
+**Compare two file byte by byte:**
+```sh
+$ cmp
+
+// Example
+$ cmp firstfile.txt secondfile.txt
+```
+
+**Mount a file system:**
+```sh
+$ mount
+```
+
+**Display the memory map for a process:**
+```sh
+$ pmap
+
+// Example
+$ pmap -x pid_goes_here
+```
+
+**Get the PID for a process:**
+```sh
+$ ps aux | grep process_name_goes_here
+
+// Example
+$ ps aux | grep terminal
+```
+
+**Download a file from a network*:**
+```sh
+$ wget
+
+// Example
+$ wget path_to_file_goes_here
+```
+
+**Display/Configure network's interface:**
+```sh
+$ ifconfig
+```
 
 
 ### **From: 15 Little Known Unix Commands**
 
- ### **Network diagnostic tool that combines tracerout and ping**
--------------------------------------------------------------
-- $ mtr `<hostname>`
-- $ mtr --report google.com
+**Network diagnostic tool that combines tracerout and ping:**
+```sh
+$ mtr host_name_goes_here
 
- ### **Omit command from command log in ~/.bash_history**
--------------------------------------------------------------
-- $ `<space>` `<command>`
+//Example
+$ mtr --report google.com
+```
 
- ### **Generate random numbers or text**
--------------------------------------------------------------
-- $ jot
-- $ jot -r `<number_of_numbers>` `<starting_number>`
+**Omit command from command log in ~/.bash_history:**
+```sh
+$ space THEN cmd
+```
 
- ### **Show the amount of available disk space**
--------------------------------------------------------------
-- $ df
+**Generate random numbers or text:**
+```sh
+$ jot
 
- ### **Display a calendar with the current date highlighted**
--------------------------------------------------------------
-- $ cal
+// Example
+$ jot -r number_of_random_numbers_to_display_goes_here number_to_start_on_goes_here
+```
 
- ### **Provides a range of utilities (ex: create, copy, merge, display, etc.)**
--------------------------------------------------------------
-- $ tac
+**Show the amount of available disk space:**
+```sh
+$ df
+```
 
- ### **Repeat a word to the output**
--------------------------------------------------------------
-- $ yes `<word_to_repeat>`
+**Display a calendar with the current date highlighted:**
+```sh
+$ cal
+```
 
- ### **Add line numbers to terminal output**
--------------------------------------------------------------
-- $ nl
-- $ cat .gitconfig | nl
+**Provides a range of utilities (ex: create, copy, merge, display, etc.):**
+```sh
+$ tac
+```
+
+**Repeat a word to the output:**
+```sh
+$ yes word_to_repeat_goes_here
+```
+
+**Add line numbers to terminal output:**
+```sh
+$ nl
+
+// Example
+$ cat .gitconfig | nl
+```
