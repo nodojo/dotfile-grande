@@ -1,33 +1,38 @@
-<!-----------------------------
- ____ ____ ____ ____ ____ ____
-||n |||o |||d |||o |||j |||o ||
-||__|||__|||__|||__|||__|||__||
-|/__\|/__\|/__\|/__\|/__\|/__\|
-
-------------------------------->
+<!----------------------------------------------------------
+@@@  @@@   @@@@@@   @@@@@@@    @@@@@@        @@@   @@@@@@
+@@@@ @@@  @@@@@@@@  @@@@@@@@  @@@@@@@@       @@@  @@@@@@@@
+@@!@!@@@  @@!  @@@  @@!  @@@  @@!  @@@       @@!  @@!  @@@
+!@!!@!@!  !@!  @!@  !@!  @!@  !@!  @!@       !@!  !@!  @!@
+@!@ !!@!  @!@  !@!  @!@  !@!  @!@  !@!       !!@  @!@  !@!
+!@!  !!!  !@!  !!!  !@!  !!!  !@!  !!!       !!!  !@!  !!!
+!!:  !!!  !!:  !!!  !!:  !!!  !!:  !!!       !!:  !!:  !!!
+:!:  !:!  :!:  !:!  :!:  !:!  :!:  !:!  !!:  :!:  :!:  !:!
+ ::   ::  ::::: ::   :::: ::  ::::: ::  ::: : ::  ::::: ::
+::    :    : :  :   :: :  :    : :  :    : :::     : :  :
+------------------------------------------------------------>
 
 # **Keyboard Shortcuts**
 
 ## **Chrome**
 
 **Open development console in chrome:**
-```bash
-$ cmd + option + I
+```
+cmd + option + i
 ```
 
 **Bookmark the page you are currently on:**
-```bash
-$ cmd + D
+```
+cmd + d
 ```
 
 **Close the tab you are currently on:**
-```bash
-$ cmd + W
+```
+cmd + w
 ```
 
 **Open link in new tab:**
-```bash
-$ cmd + CLICK
+```
+cmd + CLICK
 ```
 
 
@@ -35,82 +40,82 @@ $ cmd + CLICK
 
 **Toggle hidden file visibility:**
 ```
-$ cmd + shift + .
+cmd + shift + .
 ```
 
 **Insert an emoji anywhere:**
-```bash
-$ cmd + ctrl + space
+```
+cmd + ctrl + space
 ```
 
 **Show information for selected item:**
-```bash
-$ cmd + I
+```
+cmd + i
 ```
 
 **Move up in the hierarchy in the finder:**
 ```
-$ cmd + cmd + ↑ + >
+cmd + cmd + ↑ + >
 ```
 
 **Move down in the hierarchy in the finder:**
 ```
-$ cmd + ↓ + >
+cmd + ↓ + >
 ```
 
 **Move cursor to first (top) file in a directory:**
 ```
-$ shift + ~
+shift + ~
 ```
 
 **Toggle sidebar visibility in Finder:**
-```bash
-$ cmd + option + S
+```
+cmd + option + S
 ```
 
 **Open Downloads directory:**
-```bash
-$ cmd + option + L
+```
+cmd + option + l
 ```
 
 **Turn cursor into crosshair to screenshot selection:**
 ```
-$ cmd + shift + 4
+cmd + shift + 4
 ```
 
 **Take a screenshot of just the screen the cursor is on:**
 ```
-$ cmd + shift + 4 AND THEN space
+cmd + shift + 4 AND THEN space
 ```
 
 **Open sound preference modal:**
-```bash
-$ option + ANY VOLUME KEY
+```
+option + ANY VOLUME KEY
 ```
 
 **Open spotlight search:**
-```bash
-$ cmd + space
+```
+cmd + space
 ```
 
 **Switch between open applications:**
-```bash
-$ cmd + tab
+```
+cmd + tab
 ```
 
 **Toggle visibility of open, focused application:**
-```bash
-$ cmd + H
+```
+cmd + h
 ```
 
 **Preview file in Finder:**
-```bash
-$ click and hold
+```
+click AND hold
 ```
 
 ## **Webstorm**
 
 **Format selection in Webstorm:**
-```bash
-$ cmd + option + L
+```
+cmd + option + l
 ```
