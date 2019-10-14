@@ -608,6 +608,15 @@ alt + f
 alt + b
 ```
 
+<!-- NEW MATERIAL - FROM NOTEBOOK -->
+
+**Prevent mac from sleeping**
+```sh
+$ pmset noidle
+// or...
+$ caffeinate
+```
+
 <!-- **List:**
 
 ```sh

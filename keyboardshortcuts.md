@@ -11,6 +11,8 @@
 ::    :    : :  :   :: :  :    : :  :    : :::     : :  :
 ------------------------------------------------------------>
 
+<!-- Addintional notes: https://support.apple.com/en-us/HT201236 -->
+
 # **Keyboard Shortcuts**
 
 ## **Chrome**
@@ -113,9 +115,121 @@ cmd + h
 click AND hold
 ```
 
-## **Webstorm**
+**Delete from cursor to end of line:**
+```
+ctrl + k
+```
 
-**Format selection in Webstorm:**
+**Show shotdown menu:**
+```
+ctrl + ⏏︎
+```
+
+**Shut mac down:**
+```
+cmd + ctrl + option + ⏏︎
+```
+
+**Put mac in sleep mode:**
+```
+cmd + option + ⏏︎
+```
+
+**Only put display in sleep mode:**
+```
+ctrl + ↑ + ⏏︎
+```
+
+**Restart mac:**
+```
+cmd + ctrl + ⏏︎
+```
+
+**Kill unresponsive program(s):**
+```
+cmd + option + esc
+```
+
+**Open preferences/settings of a program:**
+```
+cmd + ,
+```
+
+**Open Finder modal:**
+```
+cmd + option + space
+```
+
+**Toggle:**
+```
+cmd +
+```
+
+**Toggle:**
+```
+cmd +
+```
+
+**Toggle:**
+```
+cmd +
+```
+
+**Toggle:**
+```
+cmd +
+```
+
+**Toggle:**
+```
+cmd +
+```
+
+**Toggle:**
+```
+cmd +
+```
+
+**Toggle:**
+```
+cmd +
+```
+
+**Toggle:**
+```
+cmd +
+```
+
+**Toggle:**
+```
+cmd +
+```
+
+**Toggle:**
+```
+cmd +
+```
+
+**Toggle:**
+```
+cmd +
+```
+
+**Toggle:**
+```
+cmd +
+```
+
+>## **Webstorm**
+
+**Format selection:**
 ```
 cmd + option + l
+```
+
+>## **VS Code**
+
+**Open settings:**
+```
+cmd + ,
 ```
