@@ -3,15 +3,15 @@
 #
 # Source: http://chneukirchen.org/blog/archive/2013/01/a-grab-bag-of-git-tricks.html
 
-[ "$1" = -r ] && shift && R=-r
-COMMIT=$(git rev-parse --no-flags --default HEAD "$@")
+# [ "$1" = -r ] && shift && R=-r
+# COMMIT=$(git rev-parse --no-flags --default HEAD "$@")
 
-# skip first elements of trail
-TORSO=$(git trail "$R" "$COMMIT" | cut -d' ' -f2 | uniq | sed -n 2p)
+# # skip first elements of trail
+# TORSO=$(git trail "$R" "$COMMIT" | cut -d' ' -f2 | uniq | sed -n 2p)
 
-# fall back to initial commit on empty trail
-# shellcheck disable=SC2046,SC2086
-: ${TORSO:=$(git rev-list --max-parents=0 HEAD)}
+# # fall back to initial commit on empty trail
+# # shellcheck disable=SC2046,SC2086
+# : ${TORSO:=$(git rev-list --max-parents=0 HEAD)}
 
-# shellcheck disable=SC2046,SC2086
-git log --oneline $(git rev-parse --no-revs "$@") $COMMIT...$TORSO
+# # shellcheck disable=SC2046,SC2086
+# git log --oneline $(git rev-parse --no-revs "$@") $COMMIT...$TORSO

@@ -2,4 +2,4 @@
 
 # Show all the parentless commits
 
-exec git log --all --oneline --decorate --max-parents=0
+# exec git log --all --oneline --decorate --max-parents=0

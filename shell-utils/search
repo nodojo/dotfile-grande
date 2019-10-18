@@ -1,25 +1,24 @@
 #!/bin/bash
 
-if [[ $# -lt 2 ]]; then
-    >&2 echo "Usage: $(basename $0) <extension to search> <search term> [parameters]"
-    >&2 echo ""
-    >&2 echo "Searches througuh the working directory looking for files with the given"
-    >&2 echo "extension that contain the search term. If extension is --all or -a"
-    >&2 echo "it will search through all files with all extensions."
-    >&2 echo ""
-    >&2 echo "Any of the remaining parameters will be passed directly to grep."
-    exit 1
-fi
+# if [[ $# -lt 2 ]]; then
+#     >&2 echo "Usage: $(basename $0) <extension to search> <search term> [parameters]"
+#     >&2 echo ""
+#     >&2 echo "Searches througuh the working directory looking for files with the given"
+#     >&2 echo "extension that contain the search term. If extension is --all or -a"
+#     >&2 echo "it will search through all files with all extensions."
+#     >&2 echo ""
+#     >&2 echo "Any of the remaining parameters will be passed directly to grep."
+#     exit 1
+# fi
 
-# Set up arguments
-if [[ $1 == "--all" || $1 == "-a" ]]; then
-    glob=\*
-else
-    glob=\*.$1
-fi
-pattern=$2
-shift 2
+# # Set up arguments
+# if [[ $1 == "--all" || $1 == "-a" ]]; then
+#     glob=\*
+# else
+#     glob=\*.$1
+# fi
+# pattern=$2
+# shift 2
 
-# Execute the command
-grep $* --include=$glob -rn -E "$pattern" .
-
+# # Execute the command
+# grep $* --include=$glob -rn -E "$pattern" .

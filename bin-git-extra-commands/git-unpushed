@@ -2,5 +2,5 @@
 #
 # Show the diff of everything you haven't pushed yet.
 
-branch=$(git rev-parse --abbrev-ref HEAD)
-exec git diff origin/$branch..HEAD
+# branch=$(git rev-parse --abbrev-ref HEAD)
+# exec git diff origin/$branch..HEAD

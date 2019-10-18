@@ -3,5 +3,5 @@
 # Sets up your branch to track a remote branch. Assumes you mean
 # `origin/$branch-name`.
 
-branch=$(git rev-parse --abbrev-ref HEAD)
-exec git branch "$branch" --set-upstream-to "origin/$branch"
+# branch=$(git rev-parse --abbrev-ref HEAD)
+# exec git branch "$branch" --set-upstream-to "origin/$branch"

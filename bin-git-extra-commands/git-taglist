@@ -4,6 +4,6 @@
 #
 # Copyright 2017, Joe Block <jpb@unixorn.net>
 
-set -o pipefail
+# set -o pipefail
 
-git tag -l --sort=v:refname | tail -n8
+# git tag -l --sort=v:refname | tail -n8

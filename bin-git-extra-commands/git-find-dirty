@@ -2,14 +2,14 @@
 #
 # Original source: https://github.com/matthewmccullough/scripts/blob/master/git-finddirty
 
-IFS=$'\n'
+# IFS=$'\n'
 
-for gitprojpath in $(find . -type d -name .git | sort | sed "s/\/\.git//"); do
-  pushd . > /dev/null
-  cd "$gitprojpath" || continue
-  isdirty=$(git status -s | grep "^.*")
-  if [ -n "$isdirty" ]; then
-    echo "DIRTY:" "$gitprojpath"
-  fi
-  popd > /dev/null
-done
+# for gitprojpath in $(find . -type d -name .git | sort | sed "s/\/\.git//"); do
+#   pushd . > /dev/null
+#   cd "$gitprojpath" || continue
+#   isdirty=$(git status -s | grep "^.*")
+#   if [ -n "$isdirty" ]; then
+#     echo "DIRTY:" "$gitprojpath"
+#   fi
+#   popd > /dev/null
+# done

@@ -4,4 +4,4 @@
 #
 # Copyright 2018, Joe Block <jpb@unixorn.net>
 
-exec git rev-parse --abbrev-ref HEAD
+# exec git rev-parse --abbrev-ref HEAD

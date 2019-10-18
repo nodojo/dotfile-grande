@@ -23,13 +23,13 @@
 # IN THE SOFTWARE.
 
 # shellcheck disable=SC2124
-REMOTES="$@"
+# REMOTES="$@"
 
-test -z "$REMOTES" &&
-REMOTES=$(git remote)
+# test -z "$REMOTES" &&
+# REMOTES=$(git remote)
 
-for remote in $REMOTES
-do
-    echo "pruning: $remote"
-    git remote prune "$remote" || true
-done
+# for remote in $REMOTES
+# do
+#     echo "pruning: $remote"
+#     git remote prune "$remote" || true
+# done

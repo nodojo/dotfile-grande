@@ -2,22 +2,22 @@
 # Originally from Gary Bernhardt's dotfiles
 # https://github.com/garybernhardt/dotfiles/blob/master/bin/git-what-the-hell-just-happened
 
-set -e
+# set -e
 
-ref=${1:-"HEAD"}
+# ref=${1:-"HEAD"}
 
-old=$ref@{1}
-new=$ref
+# old=$ref@{1}
+# new=$ref
 
-log() {
-    git log --graph --pretty=short -1 "$1"
-}
+# log() {
+#     git log --graph --pretty=short -1 "$1"
+# }
 
-echo "Old revision:"
-log "$old"
-echo
-echo "New revision:"
-log "$new"
-echo
-echo "Changes:"
-git diff --stat --summary "$new" "$old"
+# echo "Old revision:"
+# log "$old"
+# echo
+# echo "New revision:"
+# log "$new"
+# echo
+# echo "Changes:"
+# git diff --stat --summary "$new" "$old"

@@ -2,4 +2,4 @@
 #
 # Cleanse your working directory with fire
 
-git reset --hard HEAD && git clean -fdx
+# git reset --hard HEAD && git clean -fdx

@@ -13,46 +13,46 @@
 #     https://stackoverflow.com/a/7646931
 #     https://stackoverflow.com/a/16162000
 
-set -eu
+# set -eu
 
-if [[ $# -eq 0 ]]; then
-  echo 'Usage: git submodule-rm <path ...>' >&2
-  exit 2
-fi
+# if [[ $# -eq 0 ]]; then
+#   echo 'Usage: git submodule-rm <path ...>' >&2
+#   exit 2
+# fi
 
-if [[ ! -f .gitmodules ]]; then
-  echo 'Run this from the root of your repo which must have a .gitmodules file.' >&2
-  exit 1
-fi
+# if [[ ! -f .gitmodules ]]; then
+#   echo 'Run this from the root of your repo which must have a .gitmodules file.' >&2
+#   exit 1
+# fi
 
-if [[ ! -w .gitmodules ]]; then
-  echo '.gitmodules file is not writable for the current user.' >&2
-  exit 1
-fi
+# if [[ ! -w .gitmodules ]]; then
+#   echo '.gitmodules file is not writable for the current user.' >&2
+#   exit 1
+# fi
 
-for path in "$@"; do
-  submodule_path="${path%/}"
+# for path in "$@"; do
+#   submodule_path="${path%/}"
 
-  if [[ -z "$(git config --file=.gitmodules "submodule.${submodule_path}.url")" ]]; then
-    echo "Submodule '$submodule_path' not found." >&2
-    continue
-  fi
+#   if [[ -z "$(git config --file=.gitmodules "submodule.${submodule_path}.url")" ]]; then
+#     echo "Submodule '$submodule_path' not found." >&2
+#     continue
+#   fi
 
-  if [[ ! -w "$submodule_path" ]]; then
-    echo "Submodule path '$submodule_path' is not writable." >&2
-    continue
-  fi
+#   if [[ ! -w "$submodule_path" ]]; then
+#     echo "Submodule path '$submodule_path' is not writable." >&2
+#     continue
+#   fi
 
-  # If any of the following commands fail it's probably because the repo
-  # was already in a corrupted state and we can't do anything to handle
-  # that anyway so we just let the entire script crash.
+#   # If any of the following commands fail it's probably because the repo
+#   # was already in a corrupted state and we can't do anything to handle
+#   # that anyway so we just let the entire script crash.
 
-  git submodule --quiet deinit --force "$submodule_path"
-  rmdir "$submodule_path"
-  git rm --cached -rfq "$submodule_path"
+#   git submodule --quiet deinit --force "$submodule_path"
+#   rmdir "$submodule_path"
+#   git rm --cached -rfq "$submodule_path"
 
-  git config -f .gitmodules --remove-section "submodule.$submodule_path"
-  rm -rf ".git/modules/$submodule_path"
+#   git config -f .gitmodules --remove-section "submodule.$submodule_path"
+#   rm -rf ".git/modules/$submodule_path"
 
-  git add .gitmodules
-done
+#   git add .gitmodules
+# done

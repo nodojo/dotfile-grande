@@ -14,33 +14,33 @@
 #     230 ahead
 
 # shellcheck disable=SC2046,SC2086
-strip_prefix () {
-    # shellcheck disable=SC2001
-    echo "$@" |
-    sed 's@refs/heads/@@'
-}
+# strip_prefix () {
+#     # shellcheck disable=SC2001
+#     echo "$@" |
+#     sed 's@refs/heads/@@'
+# }
 
-current_branch () {
-    git symbolic-ref -q HEAD |
-    sed 's@refs/heads/@@'
-}
+# current_branch () {
+#     git symbolic-ref -q HEAD |
+#     sed 's@refs/heads/@@'
+# }
 
-tracking_branch () {
-    remote=$(git config --get branch.$(current_branch).remote)
-    merge=$(git config --get branch.$(current_branch).merge)
-    echo "$remote/$(strip_prefix $merge)"
-}
+# tracking_branch () {
+#     remote=$(git config --get branch.$(current_branch).remote)
+#     merge=$(git config --get branch.$(current_branch).merge)
+#     echo "$remote/$(strip_prefix $merge)"
+# }
 
-ref="${1:-$(tracking_branch)}"
+# ref="${1:-$(tracking_branch)}"
 
-git rev-list --left-right --abbrev-commit --abbrev "$ref"...HEAD |
-cut -c1         |
-sort            |
-uniq -c         |
-tr '\n' ','     |
-sed "
-  s/>/ahead/
-  s/</behind/
-  s/,$//g
-  s/,/, /g
-"
+# git rev-list --left-right --abbrev-commit --abbrev "$ref"...HEAD |
+# cut -c1         |
+# sort            |
+# uniq -c         |
+# tr '\n' ','     |
+# sed "
+#   s/>/ahead/
+#   s/</behind/
+#   s/,$//g
+#   s/,/, /g
+# "

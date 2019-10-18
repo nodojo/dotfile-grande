@@ -24,75 +24,75 @@
 #
 # Note: Has no way of knowing something isn't a GitLab repository.
 
-set -e
+# set -e
 
-havecmd() {
-  [ -n "$(command -v "$@" 2>/dev/null)" ]
-}
+# havecmd() {
+#   [ -n "$(command -v "$@" 2>/dev/null)" ]
+# }
 
-err() {
-  echo "ERR $*" 1>&2
-  exit 1
-}
+# err() {
+#   echo "ERR $*" 1>&2
+#   exit 1
+# }
 
-uriencode() {
-  jq -Rrns --arg in "$*" \
-    '$in|split("\n")|if last == "" then .[:-1] else . end|join(" ")|@uri'
-}
+# uriencode() {
+#   jq -Rrns --arg in "$*" \
+#     '$in|split("\n")|if last == "" then .[:-1] else . end|join(" ")|@uri'
+# }
 
-if ! havecmd jq; then
-  err 'Required program missing: jq'
-fi
+# if ! havecmd jq; then
+#   err 'Required program missing: jq'
+# fi
 
-ref="$(git rev-parse --abbrev-ref --symbolic-full-name @{u})"
-if [ -z "$ref" ]; then
-  err "No upstream for branch: $(git rev-parse --abbrev-ref --symbolic-full-name @)"
-fi
-repo="${ref%%/*}"
-if [ -z "$repo" ]; then
-  err "Unable to determine repository for ref: $ref"
-fi
-branch="${ref#$repo/}"
-if [ -z "$branch" ]; then
-  err "Unable to determine ref in repository of ref: $ref"
-fi
-uri="$(git remote get-url "$repo")"
-if [ -z "$uri" ]; then
-  err "Unable to determine URI of repository: $repo"
-fi
+# ref="$(git rev-parse --abbrev-ref --symbolic-full-name @{u})"
+# if [ -z "$ref" ]; then
+#   err "No upstream for branch: $(git rev-parse --abbrev-ref --symbolic-full-name @)"
+# fi
+# repo="${ref%%/*}"
+# if [ -z "$repo" ]; then
+#   err "Unable to determine repository for ref: $ref"
+# fi
+# branch="${ref#$repo/}"
+# if [ -z "$branch" ]; then
+#   err "Unable to determine ref in repository of ref: $ref"
+# fi
+# uri="$(git remote get-url "$repo")"
+# if [ -z "$uri" ]; then
+#   err "Unable to determine URI of repository: $repo"
+# fi
 
-scheme=https
-suffix="/merge_requests/new?$(uriencode 'merge_request[source_branch]')=$(uriencode "${branch}")"
-case "$uri" in
-*@*:*)     # SSH
-  uri="${uri#*@}"
-  domain="${uri%:*}"
-  path="/${uri#${domain}:}"
-  ;;
-https://*) # HTTPS
-  uri="${uri#https://}"
-  uri="${uri#*@}"
-  domain="${uri%%/*}"
-  path="${uri#${domain}}"
-  ;;
-http://*)  # HTTP?
-  scheme=http # Why? Why do this?
-  uri="${uri#https://}"
-  uri="${uri#*@}"
-  domain="${uri%%/*}"
-  path="${uri#${domain}}"
-  ;;
-*)
-  err "Unrecognized URI: $uri"
-  ;;
-esac
+# scheme=https
+# suffix="/merge_requests/new?$(uriencode 'merge_request[source_branch]')=$(uriencode "${branch}")"
+# case "$uri" in
+# *@*:*)     # SSH
+#   uri="${uri#*@}"
+#   domain="${uri%:*}"
+#   path="/${uri#${domain}:}"
+#   ;;
+# https://*) # HTTPS
+#   uri="${uri#https://}"
+#   uri="${uri#*@}"
+#   domain="${uri%%/*}"
+#   path="${uri#${domain}}"
+#   ;;
+# http://*)  # HTTP?
+#   scheme=http # Why? Why do this?
+#   uri="${uri#https://}"
+#   uri="${uri#*@}"
+#   domain="${uri%%/*}"
+#   path="${uri#${domain}}"
+#   ;;
+# *)
+#   err "Unrecognized URI: $uri"
+#   ;;
+# esac
 
-: "${mrurl:=${scheme}://${domain}${path%.git}${suffix}}"
-if havecmd open; then
-  open "$mrurl"
-elif havecmd xdg-open; then
-  xdg-open "$mrurl" >/dev/null 2>&1
-else
-  # Print URL if we can't open it
-  echo "$mrurl"
-fi
+# : "${mrurl:=${scheme}://${domain}${path%.git}${suffix}}"
+# if havecmd open; then
+#   open "$mrurl"
+# elif havecmd xdg-open; then
+#   xdg-open "$mrurl" >/dev/null 2>&1
+# else
+#   # Print URL if we can't open it
+#   echo "$mrurl"
+# fi
