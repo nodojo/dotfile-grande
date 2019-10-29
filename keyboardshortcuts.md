@@ -40,6 +40,11 @@ cmd + CLICK
 
 ## **Mac OS**
 
+**Manually boot mac in safe mode:**
+```
+cmd + r + pwr
+```
+
 **Toggle hidden file visibility:**
 ```
 cmd + shift + .
