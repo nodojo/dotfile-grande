@@ -18,6 +18,11 @@ $ gofmt -w yourfile.go
 $ go get github.com/username/reponame
 ```
 
+**Install go:**
+```
+$ brew install go
+```
+
 **Update go if it's located outside of the GOPATH:**
 ```
 $ brew upgrade go

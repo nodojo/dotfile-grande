@@ -681,6 +681,25 @@
 # $ git add <path-to-submodule>
 # $ git commit -m "submodule updated"
 
+# Show file names currently staged
+# $ git diff --name-only --cached
+
+# Move a preexisting project to GitHub
+# $ cd <project-directory>
+# $ git init
+# $ git add
+# $ git commit "initialization message"
+# $ git remote add origin git@github.com:<github-username>/<new-repository-name>.git
+# $ git push -u origin master (rejected)
+# $ git pull --rebase
+# $ git branch --set-upstream-to=origin/master master
+# $ git pull --rebase
+# $ git push
+
+# Force push a commit (you will lose your history)
+# $ git push --force
+
+
 # Find text pattern within all C# files recursively
 # -----------------------------------------------------------------------------------------
 # $ grep -r --include=\*.cs "pattern" .

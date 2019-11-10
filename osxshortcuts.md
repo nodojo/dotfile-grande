@@ -385,10 +385,3 @@ Screenshots are saved to Desktop, add ⌃ to copy to clipboard. ([more instructi
 * [Create new shortcuts](https://support.apple.com/kb/PH21534) and [resolve conflicts with shortcuts](https://support.apple.com/kb/PH21540).
 * Change the behavior of the [function keys](https://support.apple.com/kb/HT204436) or reassign [modifier keys](https://support.apple.com/kb/PH18422).
 * Use [spoken commands](https://support.apple.com/kb//HT203085) for keyboard shortcuts.
-
-
-## License
-
-[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/)
-
-This work is licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/).

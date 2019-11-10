@@ -180,7 +180,10 @@ cmd + option + l
 cmd + ,
 ```
 
-
+**Collapse selection (visual studio?):**
+```
+ctrl + m, ctrl + h
+```
 
 
 *_To use a keyboard shortcut, press and hold one or more modifier keys and then press the last key of the shortcut. For example, to use Command-C (copy), press and hold the Command key, then the C key, then release both keys. Mac menus and keyboards often use symbols for certain keys, including modifier keys:_
