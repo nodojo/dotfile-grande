@@ -15,19 +15,28 @@
 
 # **Miscellaneous Commands**
 
-**Install iTerm2:**
+**Set Line Endings to Prevent conflicts between platforms:**
+
+* *Unix/Mac Users*
 ```
-$ brew cask iterm2
+$ git config --global core.autocrlf input
+$ git config --global core.safecrlf true
+```
+* *Windows Users*
+```
+$ git config --global core.autocrlf true
+$ git config --global core.safecrlf true
+```
+
+**List global configs:**
+
+```
+$ git config --global --list
 ```
 
 **Install Sublime:**
 ```
 $ brew install subl
-```
-
-**Install Docker:**
-```
-$ brew cask install docker
 ```
 
 **Source Code Pro Download:**
@@ -111,6 +120,16 @@ $ brew cask info webstorm     # Displays information about the given Cask.
 $ brew cask install webstorm  # Install the given cask.
 ```
 
+**Install & Manage Atom**
+
+* *[How to install Atom on macOS using Homebrew](https://www.code2bits.com/how-to-install-atom-on-macos-using-homebrew/)*
+* *[Wikipedia: Atom](https://en.wikipedia.org/wiki/Atom_(text_editor))*
+```
+$ brew search atom            # Searches all Casks for partial/exact match.
+$ brew cask info atom         # Displays information about the given Cask.
+$ brew cask install atom      # Install the given cask.
+```
+
 **Install & Manage iTerm2**
 
 * *[How to install iTerm2 on macOS using Homebrew](https://www.code2bits.com/how-to-install-iterm2-on-macos-using-homebrew/)*
@@ -161,6 +180,16 @@ $ brew info go                 # Displays information about the given formulae.
 $ brew install go              # Install the given formulae.
 ```
 
+**Install & Manage Java**
+
+* *[How to install Java on macOS using Homebrew](https://www.code2bits.com/how-to-install-java-on-macos-using-homebrew/)*
+* *[Java](https://www.oracle.com/java/index.html)*
+```
+$ brew search java             # Searches all Casks for partial/exact match.
+$ brew cask info java          # Displays information about the given Cask.
+$ brew cask install java       # Install the given cask.
+```
+
 **Install & Manage PostgreSQL**
 
 * *[How to install PostgreSQL on macOS using Homebrew](https://www.code2bits.com/how-to-install-postgresql-on-macos-using-homebrew/)*
@@ -205,23 +234,23 @@ $ brew install mongodb       # Install the given formulae.
 
 * *[How to run MongoDB on macOS using Homebrew](https://www.code2bits.com/how-to-run-mongodb-on-macos-using-homebrew/)*
 
-***1. Configure MongoDB***
+*1. Configure MongoDB*
 ```
 $ sudo mkdir -p /data/db                # Create data directory to write data files.
 $ sudo chown $USER /data/db             # Update permissions to access directory.
 ```
-***2. Start MongoDB***
+*2. Start MongoDB*
 ```
 $ mongod                                # Start MongoDB.
 $ mongod --dbpath "/new/db/path"        # Specify directory if different than above.
 ```
-***3. Stop & Start MongoDB as Background Service***
+*3. Stop & Start MongoDB as Background Service*
 ```
 $ brew services list | grep mongodb     # List running processes & filter on MongoDB.
 $ brew services start mongodb           # Set MongoDB to register & start on login.
 $ brew services stop mongodb            # Set MongoDB to unregister & stop on login.
 ```
-***4. Access MongoDB Shell***
+*4. Access MongoDB Shell*
 ```
 $ mongo                                 # Start the Mongo shell.
 ```
@@ -414,4 +443,14 @@ $ brew install logstash      # Install the logstash formulae.
 $ brew search kibana       # Searches for formula called kibana.
 $ brew info kibana         # Displays information about kibana.
 $ brew install kibana      # Install the kibana formulae.
+```
+
+**Install & Manage Dropbox**
+
+* *[How to install Dropbox on macOS using Homebrew](https://www.code2bits.com/how-to-install-dropbox-on-macos-using-homebrew/)*
+* *[Dropbox](https://www.dropbox.com/)*
+```
+$ brew search dropbox           # Searches all Casks for partial/exact match.
+$ brew cask info dropbox        # Displays information about the given Cask.
+$ brew cask install dropbox     # Install the given cask.
 ```
