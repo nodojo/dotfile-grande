@@ -385,3 +385,43 @@ Screenshots are saved to Desktop, add ⌃ to copy to clipboard. ([more instructi
 * [Create new shortcuts](https://support.apple.com/kb/PH21534) and [resolve conflicts with shortcuts](https://support.apple.com/kb/PH21540).
 * Change the behavior of the [function keys](https://support.apple.com/kb/HT204436) or reassign [modifier keys](https://support.apple.com/kb/PH18422).
 * Use [spoken commands](https://support.apple.com/kb//HT203085) for keyboard shortcuts.
+
+
+
+
+
+
+# **References from Stack Exchange**
+
+**Find absolute path of file:**
+```
+When you drag and drop any file (or folder) from Finder onto a Terminal window, it gets converted into the full (absolute) path to that file.
+```
+
+**Zoom all screens:**
+```
+Hold ctrl and move the scroll wheel (or use two fingers on trackpad). It will zoom in the entire screen.
+
+This setting can be enabled or changed in the System Preferences, under Acessibility, Zoom -> Check the box "Use scroll gestures with modifier keys to zoom" -> Select "^ Control"
+```
+
+**Show the full directory path in the Finder window.**
+```
+$ defaults write com.apple.finder _FXShowPosixPathInTitle -bool YES
+$ killall Finder
+```
+
+**App to access hidden preference settings:**
+**[TinkerTool](http://www.bresink.com/osx/TinkerTool.html)**
+
+**Website with additional/archived hidden settings:**
+**[Secrets Database](https://web.archive.org/web/20150621044359/http://secrets.blacktree.com/)**
+
+**Secrets Source Code:**
+**[Secrets Source Code](https://code.google.com/archive/p/blacktree-secrets/source/default/source)**
+
+**Use Dictionary to show definition of highlighted word:**
+```
+ctrl + cmd + d
+```
+
