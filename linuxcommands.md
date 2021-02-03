@@ -109,6 +109,11 @@ $ chmod
 $ chown
 ```
 
+**Set visibility of a file to hidden:**
+```sh
+$ chflags hidden {drag file into terminal here and press enter}
+```
+
 **Kill a process:**
 ```sh
 $ pkill
