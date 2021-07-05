@@ -56,6 +56,22 @@ brew doctor
 If everything is good, you should see no warnings, and a message that you are
 "ready to brew!".
 
+# Homebrew-Cask
+
+### App Suggestions
+
+```sh
+brew install --cask \
+    1password \
+    docker \
+    firefox \
+    google-chrome \
+    postman \
+    slack \
+    visual-studio-code \
+    vlc
+```
+
 # Node.js
 
 Install node version manager (nvm)
