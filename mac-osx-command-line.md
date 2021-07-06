@@ -2142,3 +2142,83 @@ To leverage the notification system, this agent requires [terminal-notifier](htt
 </dict>
 </plist>
 ```
+
+
+
+## Additional commands used during setup
+
+Disable the sound effects on boot
+```sh
+sudo nvram SystemAudioVolume=" "
+```
+
+Menu bar: show battery percentage
+```sh
+defaults write com.apple.menuextra.battery ShowPercent YES
+```
+
+Disable the “Are you sure you want to open this application?” dialog
+```sh
+defaults write com.apple.LaunchServices LSQuarantine -bool false
+```
+
+Automatically illuminate built-in MacBook keyboard in low light
+```sh
+defaults write com.apple.BezelServices kDim -bool true
+```
+
+Turn off keyboard illumination when computer is not used for 5 minutes
+```sh
+defaults write com.apple.BezelServices kDimTime -int 300
+```
+
+Increase sound quality for Bluetooth headphones/headsets
+```sh
+defaults write com.apple.BluetoothAudioAgent "Apple Bitpool Min (editable)" -int 40
+```
+
+Require password immediately after sleep or screen saver begins
+```sh
+defaults write com.apple.screensaver askForPassword -int 1
+defaults write com.apple.screensaver askForPasswordDelay -int 0
+```
+
+Save screenshots to the desktop
+```sh
+defaults write com.apple.screencapture location -string "${HOME}/Desktop"
+```
+
+Save screenshots in PNG format (other options: BMP, GIF, JPG, PDF, TIFF)
+```sh
+defaults write com.apple.screencapture type -string "png"
+```
+
+Finder: allow quitting via ⌘ + Q; doing so will also hide desktop icons
+```sh
+defaults write com.apple.finder QuitMenuItem -bool true
+```
+
+When performing a search, search the current folder by default
+```sh
+defaults write com.apple.finder FXDefaultSearchScope -string "SCcf"
+```
+
+Disable the warning when changing a file extension
+```sh
+defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
+```
+
+Show indicator lights for open applications in the Dock
+```sh
+defaults write com.apple.dock show-process-indicators -bool true
+```
+
+Make Dock icons of hidden applications translucent
+```sh
+defaults write com.apple.dock showhidden -bool true
+```
+
+
+
+
+
