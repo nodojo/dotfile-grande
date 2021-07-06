@@ -97,6 +97,7 @@ mkdir -p /path/to/screenshots/    # example path: /Users/macuser/Desktop/desktop
 defaults write com.apple.screencapture location /path/to/screenshots/ && killall SystemUIServer
 ```
 
+
 # Xcode
 
 [Xcode](https://developer.apple.com/xcode/) is an integrated development environment for macOS containing a suite of software development tools developed by Apple for developing software for macOS, iOS, watchOS and tvOS.
@@ -110,6 +111,7 @@ xcode-select --install
 ```
 
 It'll prompt you to install the command line tools. Follow the instructions and you'll have Xcode and Xcode command line tools both installed.
+
 
 # Homebrew
 
@@ -152,6 +154,7 @@ brew doctor
 If everything is good, you should see no warnings, and a message that you are
 "ready to brew!".
 
+
 # Homebrew-Cask
 
 ### App Suggestions
@@ -167,6 +170,397 @@ brew install --cask \
     visual-studio-code \
     vlc
 ```
+
+
+# iTerm2
+
+[iTerm2](http://www.iterm2.com/) is an open source replacement for Apple's Terminal. It's highly customizable and comes with a lot of useful features.
+
+## Installation
+
+Use [Homebrew](https://sourabhbajaj.com/mac-setup/Homebrew/) to download and install:
+
+```sh
+brew install --cask iterm2
+```
+
+
+# zsh
+
+The Z shell (also known as `zsh`) is a Unix shell that is built on top of `bash`
+(the default shell for macOS) with additional features. It's recommended to use
+`zsh` over `bash`. It's also highly recommended to install a framework with
+`zsh` as it makes dealing with configuration, plugins and themes a lot nicer.
+
+We've also included an `env.sh` file where we store our aliases, exports, path
+changes etc. We put this in a separate file to not pollute our main
+configuration file too much. This file is found in the bottom of this page.
+
+Install `zsh` using Homebrew:
+
+```sh
+brew install zsh
+```
+
+Now you should install a framework, we recommend to use [Oh My Zsh](https://github.com/robbyrussell/oh-my-zsh)
+or [Prezto](https://github.com/sorin-ionescu/prezto). **Note that you should
+pick one of them, not use both.**
+
+The configuration file for `zsh` is called `.zshrc` and lives in your home
+folder (`~/.zshrc`).
+
+## Oh My Zsh
+
+[Oh My Zsh](https://github.com/robbyrussell/oh-my-zsh) is an open source,
+community-driven framework for managing your `zsh` configuration. It comes
+with a bunch of features out of the box and improves your terminal experience.
+
+Install Oh My Zsh:
+
+```sh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+```
+
+The installation script should set `zsh` to your default shell, but if it
+doesn't you can do it manually:
+
+```sh
+chsh -s $(which zsh)
+```
+
+## Clone theme
+
+[https://github.com/bhilburn/powerlevel9k](bhilburn/powerlevel9k)
+
+```sh
+git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
+```
+
+[https://github.com/ryanoasis/nerd-fonts](ryanoasis/nerd-fonts)
+
+```sh
+git clone --depth 1 git@github.com:ryanoasis/nerd-fonts.git
+cd nerd-fonts
+./install.sh
+```
+
+### Configuration
+
+The out-of-the-box configuration is usable but you probably want to customise
+it to suit your needs. The [Official Wiki](https://github.com/robbyrussell/oh-my-zsh/wiki)
+contains a lot of useful information if you want to deep dive into what you
+can do with Oh My Zsh, but we'll cover the basics here.
+
+To apply the changes you make you need to either **start new shell instance**
+or run:
+
+```sh
+source ~/.zshrc
+```
+
+#### Plugins
+
+Add plugins to your shell by adding the name of the plugin to the `plugin`
+array in your `.zshrc`.
+
+```sh
+plugins=(git colored-man-pages colorize pip python brew osx zsh-syntax-highlighting zsh-autosuggestions)
+```
+
+You'll find a list of all plugins on the [Oh My Zsh Wiki](https://github.com/robbyrussell/oh-my-zsh/wiki/Plugins).
+Note that adding plugins can cause your shell startup time to increase.
+
+#### Themes
+
+Changing theme is as simple as changing a string in your configuration file.
+The default theme is `robbyrussell`. Just change that value to change theme,
+and don't forget to apply your changes.
+
+```sh
+ZSH_THEME=pygmalion
+```
+
+You'll find a list of themes with screenshots on the
+[Oh My Zsh Wiki](https://github.com/robbyrussell/oh-my-zsh/wiki/themes).
+
+
+# Git and GitHub
+
+What's a developer without [Git](http://git-scm.com/)? To install, run:
+
+```sh
+brew install git
+```
+
+When done, to test that it installed properly you can run:
+
+```sh
+git --version
+```
+
+And `which git` should output `/usr/local/bin/git`.
+
+Next, we'll define your Git user (should be the same name and email you use for [GitHub](https://github.com/)):
+
+```sh
+git config --global user.name "Your Name Here"
+git config --global user.email "your_email@youremail.com"
+```
+
+They will get added to your `.gitconfig` file.
+
+To push code to your GitHub repositories, we will use the recommended HTTPS method. There are also instructions for using SSH. To prevent `git` from asking for your username and password every time you push a commit you can cache your credentials by running the following command, as described in the [instructions](https://help.github.com/articles/caching-your-github-password-in-git/).
+
+```sh
+git config --global credential.helper osxkeychain
+```
+
+## Using HTTPS for GitHub (recommended)
+
+These instructions are from [the official documentation](https://help.github.com/en/github/using-git/which-remote-url-should-i-use#cloning-with-https-urls-recommended).
+
+### Clone repositories using HTTPS
+
+After creating a new repo on GitHub, clone it using:
+
+```sh
+git clone https://github.com/<username>/<repo-name>.git
+```
+
+\- if you had initialized with a README.
+
+If you did not, follow the instructions in the section below.
+
+### Set up a new or existing repo with HTTPS for GitHub
+
+If you are setting up a new repo, add at least one file and commit first. Then, configure the remote and push to GitHub by running:
+
+```sh
+git remote add origin https://github.com/<username>/<repo-name>.git
+git push -u origin master
+```
+
+## SSH Config for GitHub
+
+These instructions are for those who wish to use SSH and not HTTPS, and are from [the official documentation](https://help.github.com/articles/generating-ssh-keys).
+
+### Check for existing SSH keys
+
+First check for existing SSH keys on your computer by running:
+
+```sh
+ls -al ~/.ssh
+# Lists the files in your .ssh directory, if they exist
+```
+
+Check the directory listing to see if you have files named either `id_rsa.pub` or `id_dsa.pub`. If you don't have either of those files then read on, otherwise skip the next section.
+
+### Generate a new SSH key
+
+If you don't have an SSH key you need to generate one. To do that you need to run the commands below, and make sure to substitute the placeholder with your email. The default settings are preferred, so when you're asked to enter a file in which to save the key, just press Enter to continue.
+
+```sh
+ssh-keygen -t rsa -C "your_email@example.com"
+# Creates a new ssh key, using the provided email as a label
+```
+
+### Add your SSH key to the ssh-agent
+
+Run the following commands to add your SSH key to the `ssh-agent`.
+
+```sh
+eval "$(ssh-agent -s)"
+```
+
+If you're running macOS Sierra 10.12.2 or later, you will need to modify your `~/.ssh/config` file to automatically load keys into the ssh-agent and store passphrases in your keychain:
+
+```ssh-config
+Host *
+  AddKeysToAgent yes
+  UseKeychain yes
+  IdentityFile ~/.ssh/id_rsa
+```
+
+No matter what operating system version you run you need to run this command to complete this step:
+
+```sh
+ssh-add -K ~/.ssh/id_rsa
+```
+
+### Adding a new SSH key to your GitHub account
+
+The last step is to let GitHub know about your SSH key so GitHub can recognize you. Run this command to copy your key to your clipboard:
+
+```sh
+pbcopy < ~/.ssh/id_rsa.pub
+```
+
+Then go to GitHub and [input your new SSH key](https://github.com/settings/ssh/new). Paste your key in the "Key" text-box and pick a name that represents the computer you're currently using.
+
+We are now ready to use SSH with GitHub!
+
+### Clone repositories using SSH
+
+After creating a new repo on GitHub, clone it using
+
+```sh
+git clone git@github.com:<username>/<repo-name>.git
+```
+
+\- if you had initialized with a README.
+
+If you did not, follow the instructions in the section below.
+
+### Set up a new or existing repo with SSH for GitHub
+
+If you are setting up a new repo, add at least one file and commit first. Then, configure the remote and push to GitHub by running:
+
+```sh
+git remote add origin git@github.com:<username>/<repo-name>.git
+git push -u origin master
+```
+
+
+# Visual Studio Code
+
+[Visual Studio Code](https://code.visualstudio.com/) is a lightweight code editor with support for many programming languages through [extensions](https://code.visualstudio.com/docs/editor/extension-gallery)
+
+## Installation
+
+To install the latest version, use Homebrew:
+
+```sh
+brew install --cask visual-studio-code
+```
+
+## macOS integration
+
+Launch VS Code from the [command line](https://code.visualstudio.com/docs/setup/mac#_launching-from-the-command-line).
+
+After that, you can launch VS Code from your terminal:
+
+* `code .` will open VS Code in the current directory
+* `code myfile.txt` will open `myfile.txt` in VS Code
+
+## Useful Extensions
+
+### Python
+
+* [Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python) - Python code highlighting
+
+  To enable auto-formatting on "Save", i.e. `⌘ + S`, configure the following:
+
+  1. Change the default formatter to `Black` instead of `Autopep8`. Critical to avoid large diffs. Go to _Preferences_ -> _User Settings_ and update the setting `python.formatter.provider` to `Black`
+
+  2. Enable `Format on Save` Setting: _Editor: Format On Save_ setting on _Code_ -> _Preferences_ -> _Settings_
+
+### JavaScript
+
+* [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint
+) - Useful to check JavaScript errors and helps in auto-formatting the code
+* [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode
+) - JavaScript code formatter
+
+### SQL
+
+* [PostgreSQL formatter](https://marketplace.visualstudio.com/items?itemName=bradymholt.pgformatter)
+
+### Markdown
+
+* [Markdown Preview](https://marketplace.visualstudio.com/items?itemName=shd101wyy.markdown-preview-enhanced) - Read Markdown files in VSCode
+
+### GitLens
+
+* [GitLens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens
+) - Supercharge the Git capabilities built into VSCode
+
+### Docker
+
+* [Docker](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker) - Create, manage, and debug images from within VSCode
+
+### JSON
+
+* [Paste JSON as Code](https://marketplace.visualstudio.com/items?itemName=quicktype.quicktype) - Infers types from sample JSON data, then outputs strongly typed models and serializers for working with that data in your desired programming language
+
+### Live Server
+
+* [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) - Launches a local development server with live reloading for both static and dynamic
+
+### VS Code Icons
+
+* [vscode-icons](https://marketplace.visualstudio.com/items?itemName=vscode-icons-team.vscode-icons) - Adds unique icons to distinguish different file extensions (easier to glance through your directories)
+
+
+# PostgreSQL
+
+PostgreSQL is an open source relational database management system (RDBMS). It is the default database for macOS server.
+
+## Installation
+
+```sh
+brew install postgres
+```
+
+After this, we can test the installation status by checking the version of installed PostgreSQL
+
+```sh
+postgres -V
+```
+
+## Usage
+
+### Start PostgreSQL server
+
+```sh
+pg_ctl -D /usr/local/var/postgres start
+```
+
+Or you can start the PostgreSQL server and have it start up at login automatically
+
+```sh
+brew services start postgresql
+```
+
+### Stop PostgreSQL server
+
+```sh
+pg_ctl -D /usr/local/var/postgres stop
+```
+
+To make it stop starting up automatically at login
+
+```sh
+brew services stop postgresql
+```
+
+### Restart PostgreSQL server
+
+```sh
+pg_ctl -D /usr/local/var/postgres restart
+```
+
+Or if you're using `homebrew`
+
+```sh
+brew services restart postgresql
+```
+
+### Start PostgreSQL console
+
+```sh
+psql
+```
+
+### GUI tool
+
+We can use `psequel` a free GUI tool for managing the local and remote PostgreSQL databases
+
+Install `psequel` using `homebrew`
+
+```sh
+brew install psequel
+```
+
 
 # Node.js
 
