@@ -88,7 +88,7 @@ defaults write com.google.Chrome AppleEnableSwipeNavigateWithScrolls -bool false
 defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
 ```
 - Change the default folder for screenshots
-  - From the terminal, create a folder to store screenshots
+  - Create a folder to store screenshots
 ```sh
 mkdir -p /path/to/screenshots/    # example path: /Users/macuser/Desktop/desktop-folder/
 ```
