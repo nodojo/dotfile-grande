@@ -1,6 +1,102 @@
 2015 MacBook Pro Setup Steps
 
 
+# System Preferences
+
+
+## General
+
+- Set `Appearance: Dark`
+
+## Dock & Menu Bar
+
+- Set `Position on screen: left`
+- Check `Automatically hide and showthe Dock`
+- Uncheck `Show recent applications in Dock`
+
+## Security & Privacy
+
+- Change `Require password __ after sleep or screen saver begins` to `1 minute`
+- Set `Allow apps downloaded from` to `App Store and identified developers`
+- Turn FileVault On (makes sure SSD is securely encrypted)
+- Turn Firewall On (extra security measure)
+
+## Bluetooth
+
+- check `Show Bluetooth in menu bar`
+
+## Keyboard
+
+- Uncheck `Correct spelling automatically`
+- Uncheck `Capitalize words automatically`
+- Uncheck `Add period with double-space`
+- Uncheck `Use smart quotes and dashes`
+
+## Trackpad
+
+- Uncheck `Scroll direction: Natural`
+
+## Mouse
+
+- Uncheck `Scroll direction: Natural`
+
+## Sharing
+
+- Change computer name
+- Make sure all file sharing is disabled
+
+## Desktop & Screen Saver
+
+- Set desktop background to persist after reboot
+  - Open mission control and add a screen (should have two screens, Desktop1 and Desktop2)
+  - Select the newly created screen (Desktop2)
+  - Right click and select `Change Desktop Background...`
+  - Set the image or color for the background and close System Preferences
+  - Open mission control and close the screen Desktop1
+  - Reboot and test
+
+## Finder
+
+Preferences
+- General
+  - Set `New finder windows show` to open in your home directory
+- Sidebar
+  - Check/Uncheck to customize sidebar items
+
+Defaults
+- Show path bar
+```sh
+defaults write com.apple.finder ShowPathbar -bool true
+```
+- Show status bar
+```sh
+defaults write com.apple.finder ShowStatusBar -bool true
+```
+
+## User Defaults
+
+- Show Library folder
+```sh
+chflags nohidden ~/Library
+```
+- Prevent left/right swipe through history in Chrome
+```sh
+defaults write com.google.Chrome AppleEnableSwipeNavigateWithScrolls -bool false
+```
+- Enable repeating keys by pressing and holding down keys
+```sh
+defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
+```
+- Change the default folder for screenshots
+  - From the terminal, create a folder to store screenshots
+```sh
+mkdir -p /path/to/screenshots/    # example path: /Users/macuser/Desktop/desktop-folder/
+```
+  - Then run the following command
+```sh
+defaults write com.apple.screencapture location /path/to/screenshots/ && killall SystemUIServer
+```
+
 # Xcode
 
 [Xcode](https://developer.apple.com/xcode/) is an integrated development environment for macOS containing a suite of software development tools developed by Apple for developing software for macOS, iOS, watchOS and tvOS.
