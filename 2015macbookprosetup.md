@@ -11,7 +11,7 @@
 ## Dock & Menu Bar
 
 - Set `Position on screen: left`
-- Check `Automatically hide and showthe Dock`
+- Check `Automatically hide and show the Dock`
 - Uncheck `Show recent applications in Dock`
 
 ## Security & Privacy
