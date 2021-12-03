@@ -188,6 +188,10 @@ brew install --cask \
     vlc
 ```
 
+```sh
+brew install --cask spectacle
+```
+
 
 # iTerm2
 
