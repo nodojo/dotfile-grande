@@ -72,6 +72,10 @@ defaults write com.apple.finder ShowPathbar -bool true
 ```sh
 defaults write com.apple.finder ShowStatusBar -bool true
 ```
+- Show full path in Finder title
+```sh
+defaults write com.apple.finder _FXShowPosixPathInTitle -bool true
+```
 
 ## User Defaults
 
