@@ -115,10 +115,16 @@ defaults write com.apple.screencapture location /path/to/screenshots/ && killall
 
 Download and install it from the App Store or from [Apple's website](https://developer.apple.com/xcode/).
 
-For installing Xcode command line tools run:
+Install Xcode command line tools:
 
 ```sh
 xcode-select --install
+```
+
+Agree to Xcode license without opening the application
+
+```sh
+sudo xcodebuild -license
 ```
 
 It'll prompt you to install the command line tools. Follow the instructions and you'll have Xcode and Xcode command line tools both installed.
