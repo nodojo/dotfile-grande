@@ -89,8 +89,9 @@ defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
 ```
 - Change the default folder for screenshots
   - Create a folder to store screenshots
+  - example path: /Users/macuser/Desktop/desktop-folder/
 ```sh
-mkdir -p /path/to/screenshots/    # example path: /Users/macuser/Desktop/desktop-folder/
+mkdir -p /path/to/screenshots/
 ```
   - Then run the following command
 ```sh
