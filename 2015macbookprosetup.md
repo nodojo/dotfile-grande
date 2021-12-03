@@ -83,7 +83,7 @@ chflags nohidden ~/Library
 ```sh
 defaults write com.google.Chrome AppleEnableSwipeNavigateWithScrolls -bool false
 ```
-- Enable repeating keys by pressing and holding down keys
+- Disable repeating keys by pressing and holding down keys
 ```sh
 defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
 ```
