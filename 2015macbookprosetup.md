@@ -76,6 +76,12 @@ defaults write com.apple.finder ShowStatusBar -bool true
 ```sh
 defaults write com.apple.finder _FXShowPosixPathInTitle -bool true
 ```
+- Enable quit Finder with default shortcut
+<kbd>Cmd</kbd> + <kbd>Q</kbd>
+```sh
+defaults write com.apple.finder QuitMenuItem -bool true && \
+killall Finder
+```
 
 ## User Defaults
 
