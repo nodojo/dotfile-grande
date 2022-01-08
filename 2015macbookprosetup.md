@@ -184,6 +184,16 @@ Disable the “Are you sure you want to open this application?” dialog
 defaults write com.apple.LaunchServices LSQuarantine -bool false
 ```
 
+When performing a search, search the current folder by default
+```sh
+defaults write com.apple.finder FXDefaultSearchScope -string "SCcf"
+```
+
+Disable the warning when changing a file extension
+```sh
+defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
+```
+
 # Xcode
 
 [Xcode](https://developer.apple.com/xcode/) is an integrated development environment for macOS containing a suite of software development tools developed by Apple for developing software for macOS, iOS, watchOS and tvOS.
