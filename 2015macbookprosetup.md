@@ -83,6 +83,19 @@ defaults write com.apple.finder QuitMenuItem -bool true && \
 killall Finder
 ```
 
+#### Icon Bounce
+Global setting whether Dock icons should bounce when the respective application
+demands your attention.
+```sh
+# Enable (Default)
+defaults write com.apple.dock no-bouncing -bool true && \
+killall Dock
+
+# Disable
+defaults write com.apple.dock no-bouncing -bool false && \
+killall Dock
+```
+
 ## User Defaults
 
 - Show Library folder
