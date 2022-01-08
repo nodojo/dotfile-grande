@@ -277,6 +277,9 @@ brew install --cask \
 brew install --cask spectacle
 ```
 
+```sh
+brew install --cask libreoffice
+```
 
 # iTerm2
 
