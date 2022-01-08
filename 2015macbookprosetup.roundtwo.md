@@ -13,6 +13,8 @@ Set desktop background to persist after reboot
 5. Open mission control and close the screen Desktop1
 6. Reboot and test
 
+**todo: this doesn't work 100% as expected so find the correct way and update**
+
 Set background image for login screen (macOS Monterey)
 
 1. System Preferences > Security & Privacy > FileVault > Turn Off FileVault
@@ -28,6 +30,7 @@ Enable quit Finder with default shortcut
 defaults write com.apple.finder QuitMenuItem -bool true && \
 killall Finder
 ```
+**todo: retake screenshots with show path in title set to false**
 
 Show path bar
 ```sh
@@ -42,3 +45,43 @@ defaults write com.apple.finder ShowStatusBar -bool true
 ```
 
 <img width="738" alt="showstatusbar" src="https://user-images.githubusercontent.com/52790569/148661183-27fe6f16-6bc3-41e5-9d0e-0c8aa3898e4a.png">
+
+## Install Homebrew
+
+```sh
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+```
+
+## Install commands for desired applications
+
+```sh
+brew install --cask 1password
+brew install --cask firefox
+brew install --cask google-chrome
+brew install --cask iterm2
+brew install --cask libreoffice
+brew install --cask spectacle
+brew install --cask visual-studio-code
+brew install --cask vlc
+
+brew install git
+brew install zsh
+```
+
+## Node.js
+
+Install node version manager (nvm)
+
+```sh
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
+```
+
+Reload iTerm and check nvm, npm, and node installations
+
+```sh
+nvm --version
+```
+
+```sh
+node -v && npm -v
+```
