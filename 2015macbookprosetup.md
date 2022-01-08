@@ -117,6 +117,11 @@ chflags hidden ~/Library
 chflags nohidden ~/Library
 ```
 
+#### Disable Sound Effects on Boot
+```sh
+sudo nvram SystemAudioVolume=" "
+```
+
 ## User Defaults
 
 - Show Library folder
