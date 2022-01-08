@@ -174,6 +174,16 @@ function mkicns() {
 }
 ```
 
+Menu bar: show battery percentage
+```sh
+defaults write com.apple.menuextra.battery ShowPercent YES
+```
+
+Disable the “Are you sure you want to open this application?” dialog
+```sh
+defaults write com.apple.LaunchServices LSQuarantine -bool false
+```
+
 # Xcode
 
 [Xcode](https://developer.apple.com/xcode/) is an integrated development environment for macOS containing a suite of software development tools developed by Apple for developing software for macOS, iOS, watchOS and tvOS.
