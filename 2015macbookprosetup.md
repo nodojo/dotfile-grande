@@ -106,6 +106,17 @@ sudo chflags -R nouchg /path/to/file/or/folder
 sudo chflags -R uchg /path/to/file/or/folder
 ```
 
+#### Toggle Folder Visibility in Finder
+By default, the `~/Library` folder is hidden. You can easily show it again. The
+same method works with all other folders.
+```sh
+# Hidden (Default)
+chflags hidden ~/Library
+
+# Visible
+chflags nohidden ~/Library
+```
+
 ## User Defaults
 
 - Show Library folder
