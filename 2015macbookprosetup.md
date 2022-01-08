@@ -96,6 +96,16 @@ defaults write com.apple.dock no-bouncing -bool false && \
 killall Dock
 ```
 
+#### Set Protected Flag
+This is equivalent to Finder "Locked" status.
+```sh
+# Disable (Default)
+sudo chflags -R nouchg /path/to/file/or/folder
+
+# Enable
+sudo chflags -R uchg /path/to/file/or/folder
+```
+
 ## User Defaults
 
 - Show Library folder
