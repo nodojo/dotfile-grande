@@ -28,3 +28,17 @@ Enable quit Finder with default shortcut
 defaults write com.apple.finder QuitMenuItem -bool true && \
 killall Finder
 ```
+
+Show path bar
+```sh
+defaults write com.apple.finder ShowPathbar -bool true
+```
+
+<img width="738" alt="showpathbar" src="https://user-images.githubusercontent.com/52790569/148661175-921affd6-b7de-417e-911c-478c9aeee873.png">
+
+Show status bar
+```sh
+defaults write com.apple.finder ShowStatusBar -bool true
+```
+
+<img width="738" alt="showstatusbar" src="https://user-images.githubusercontent.com/52790569/148661183-27fe6f16-6bc3-41e5-9d0e-0c8aa3898e4a.png">
