@@ -2,6 +2,23 @@
 
 # System Preferences
 
+## Keyboard
+
+Disable auto-correct
+```sh
+defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
+```
+
+Disable automatic capitalization
+```sh
+defaults write NSGlobalDomain NSAutomaticCapitalizationEnabled -bool false
+```
+
+Disable automatic period substitution
+```sh
+defaults write NSGlobalDomain NSAutomaticPeriodSubstitutionEnabled -bool false
+```
+
 ## Desktop & Screen Saver
 
 Set desktop background to persist after reboot
@@ -12,15 +29,6 @@ Set desktop background to persist after reboot
 4. Set the image or color for the background and close System Preferences
 5. Open mission control and close the screen Desktop1
 6. Reboot and test
-
-**todo: this doesn't work 100% as expected so find the correct way and update**
-
-Set background image for login screen (macOS Monterey)
-
-1. System Preferences > Security & Privacy > FileVault > Turn Off FileVault
-2. Desktop & Screen Saver > Change background to background of your choosing, or change to another and change back
-3. Apple menu > Lock screen >> background should be the one you've chosen
-4. Turn FileVault back on
 
 ## Finder
 
