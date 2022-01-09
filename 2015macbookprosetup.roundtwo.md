@@ -33,6 +33,11 @@ Disable automatic period substitution
 defaults write NSGlobalDomain NSAutomaticPeriodSubstitutionEnabled -bool false
 ```
 
+Disable the "press and hold" behavior
+```sh
+defaults write -g ApplePressAndHoldEnabled -bool true
+```
+
 ## Desktop & Screen Saver
 
 Set desktop background to persist after reboot
