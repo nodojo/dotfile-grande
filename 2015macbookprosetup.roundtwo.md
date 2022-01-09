@@ -68,9 +68,15 @@ defaults write com.apple.finder ShowStatusBar -bool true
 
 <img width="738" alt="showstatusbar" src="https://user-images.githubusercontent.com/52790569/148661183-27fe6f16-6bc3-41e5-9d0e-0c8aa3898e4a.png">
 
-Set Current Folder as default search scope
+Set the current folder as default search scope
 ```sh
 defaults write com.apple.finder FXDefaultSearchScope -string "SCcf"
+```
+
+Set the default Finder location to the home folder
+```sh
+defaults write com.apple.finder NewWindowTarget -string "PfLo" && \
+defaults write com.apple.finder NewWindowTargetPath -string "file://${HOME}"
 ```
 
 ## Install Homebrew
