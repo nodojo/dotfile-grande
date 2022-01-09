@@ -2,6 +2,20 @@
 
 # System Preferences
 
+## Dock & Menu Bar
+
+Automatically hide and show the Dock
+```sh
+defaults write com.apple.dock autohide -bool true && \
+killall Dock
+```
+
+Disable showing recently used applications in the Dock
+```sh
+defaults write com.apple.dock show-recents -bool false  && \
+killall Dock
+```
+
 ## Keyboard
 
 Disable auto-correct
