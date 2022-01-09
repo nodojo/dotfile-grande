@@ -49,6 +49,28 @@ Set desktop background to persist after reboot
 5. Open mission control and close the screen Desktop1
 6. Reboot and test
 
+## Security
+
+Display status of FileVault service
+```sh
+sudo fdesetup status
+```
+
+Enable FileVault service
+```sh
+sudo fdesetup enable
+```
+
+Display status of Firewall service
+```sh
+sudo /usr/libexec/ApplicationFirewall/socketfilterfw --getglobalstate
+```
+
+Enable Firewall service
+```sh
+sudo /usr/libexec/ApplicationFirewall/socketfilterfw --setglobalstate on
+```
+
 ## Finder
 
 Enable quit Finder with default shortcut
