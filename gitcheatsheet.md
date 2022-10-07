@@ -175,6 +175,20 @@ git clean -f
 git clean -f -d
 ```
 
+## Manage remote repositories
+
+#### Change remote repositories using ssh
+
+```bash
+git remote set-url origin git@github.com:repo-name-goes-here
+```
+
+#### Verify the update by listing currently connected remote repositories
+
+```bash
+git remote -v
+```
+
 ## Add an existing project to an new repository
 
 1. Create a new repository in GitHub by clicking the `+` symbol in the top right corner and selecting `New Repository`.
