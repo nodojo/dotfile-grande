@@ -149,6 +149,12 @@ git checkout master && git pull && git checkout branch-name-goes-here && git reb
 git reset --merge
 ```
 
+## Edit message of unpushed commit
+
+```bash
+git commit --amend -m 'new message goes here'
+```
+
 ## Add an existing project to an new repository
 
 1. Create a new repository in GitHub by clicking the `+` symbol in the top right corner and selecting `New Repository`.
