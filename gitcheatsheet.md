@@ -1,6 +1,15 @@
-# **Git Cheatsheet**
+# Git Cheatsheet
 
-**Add an existing project to an new repository:**
+## List branches
+
+#### List only local branches
+
+```bash
+git branch
+```
+
+
+## Add an existing project to an new repository
 
 1. Create a new repository in GitHub by clicking the `+` symbol in the top right corner and selecting `New Repository`.
 
