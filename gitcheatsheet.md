@@ -20,6 +20,20 @@ git branch -r
 git branch -a
 ```
 
+## Delete a branch
+
+#### Delete a local branch
+
+```bash
+git branch -d branch-name-goes-here
+```
+
+#### Delete a remote branch
+
+```bash
+git push origin --delete branch-name-goes-here
+```
+
 ## Add an existing project to an new repository
 
 1. Create a new repository in GitHub by clicking the `+` symbol in the top right corner and selecting `New Repository`.
