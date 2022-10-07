@@ -112,6 +112,31 @@ git config --global alias.ci 'commit -v'
 git config --global push.default current
 ```
 
+## Undo commit(s)
+
+#### Undo the last commit
+
+```bash
+git reset --hard HEAD^
+```
+
+#### Undo the last two commits
+
+```bash
+git reset --hard HEAD~2
+```
+
+#### Undo then redo a commit
+
+```bash
+git reset HEAD~
+
+# make the desired edits
+
+git add .
+git commit -c ORIG_HEAD
+```
+
 ## Add an existing project to an new repository
 
 1. Create a new repository in GitHub by clicking the `+` symbol in the top right corner and selecting `New Repository`.
