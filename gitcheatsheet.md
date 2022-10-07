@@ -190,7 +190,7 @@ git commit -m 'stopped tracking file-name-goes-here'
 git remote set-url origin git@github.com:repo-name-goes-here
 ```
 
-#### Verify the update by listing currently connected remote repositories
+#### Verify update by displaying fetch and push origin
 
 ```bash
 git remote -v
