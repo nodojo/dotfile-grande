@@ -79,6 +79,39 @@ git log origin/master..HEAD
 git shortlog -s -n
 ```
 
+## Manage .gitconfig
+
+#### Locate .gitconfig on Windows
+
+```bash
+cd ~
+ls -alrt
+```
+
+#### Open .gitconfig on Windows
+
+```bash
+start ~/.gitconfig
+```
+
+#### Add alias to .gitconfig
+
+```bash
+git config --global alias.st status
+```
+
+#### Add alias containing a space or command line argument to .gitconfig 
+
+```bash
+git config --global alias.ci 'commit -v'
+```
+
+#### Set git to only push to branch you are on
+
+```bash
+git config --global push.default current
+```
+
 ## Add an existing project to an new repository
 
 1. Create a new repository in GitHub by clicking the `+` symbol in the top right corner and selecting `New Repository`.
