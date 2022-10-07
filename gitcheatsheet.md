@@ -20,25 +20,57 @@ git branch -r
 git branch -a
 ```
 
-## Delete a branch
+## Delete branch
 
-#### Delete a local branch
+#### Delete local branch
 
 ```bash
 git branch -d branch-name-goes-here
 ```
 
-#### Delete a remote branch
+#### Delete remote branch
 
 ```bash
 git push origin --delete branch-name-goes-here
 ```
 
-## Create a branch and push to origin
+## Create branch and push to origin
 
 ```bash
 git checkout -b branch-name-goes-here
 git push -u origin branch-name-goes-here
+```
+
+## Display commit logs
+
+#### Display commits on single line with graph of commits on left
+
+```bash
+git log --oneline --graph
+```
+
+#### Display commits to specific branch (you ARE on branch)
+
+```bash
+git log master..
+```
+
+#### Display commits to specific branch (you ARE NOT on branch)
+
+```bash
+git log master..branch-name-goes-here
+```
+
+#### List all local unpushed commits
+
+```bash
+git log --branches --not --remotes
+```
+
+#### Display previous unpushed commit
+
+```bash
+git log origin/master..HEAD
 ```
 
 ## Add an existing project to an new repository
