@@ -8,6 +8,17 @@
 git branch
 ```
 
+#### List only remote branches
+
+```bash
+git branch -r
+```
+
+#### List remote and local branches
+
+```bash
+git branch -a
+```
 
 ## Add an existing project to an new repository
 
