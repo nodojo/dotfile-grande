@@ -155,6 +155,48 @@ git reset --merge
 git commit --amend -m 'new message goes here'
 ```
 
+## Manage tags
+
+#### List local tags
+
+```bash
+git tag
+```
+
+#### Edit tag and create new tag containing your changes
+
+1. Create a new branch from tag
+
+```bash
+git checkout -b new-branch-name-goes-here tag-name-goes-here
+```
+
+2. Make and commit your edits
+
+3. Create a new tag containing your changes
+
+```bash
+git tag -a -m 'new tag message goes here' new-tag-name-goes-here
+```
+
+4. Push the newly created tag to the remote repository
+
+```bash
+git push origin new-tag-name-goes-here
+```
+
+#### Delete local tag
+
+```bash
+git tag -d tag-name-goes-here
+```
+
+#### Delete remote tag
+
+```bash
+git push --delete origin tag-name-goes-here
+```
+
 ## Remove untracked files from working tree
 
 #### Display what will be removed
