@@ -73,6 +73,12 @@ git log --branches --not --remotes
 git log origin/master..HEAD
 ```
 
+## Display commit count by user
+
+```bash
+git shortlog -s -n
+```
+
 ## Add an existing project to an new repository
 
 1. Create a new repository in GitHub by clicking the `+` symbol in the top right corner and selecting `New Repository`.
