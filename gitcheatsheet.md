@@ -155,6 +155,26 @@ git reset --merge
 git commit --amend -m 'new message goes here'
 ```
 
+## Remove untracked files from working tree
+
+#### Display what will be removed
+
+```bash
+git clean -n
+```
+
+#### Remove untracked files
+
+```bash
+git clean -f
+```
+
+#### Remove untracked files and directories
+
+```bash
+git clean -f -d
+```
+
 ## Add an existing project to an new repository
 
 1. Create a new repository in GitHub by clicking the `+` symbol in the top right corner and selecting `New Repository`.
