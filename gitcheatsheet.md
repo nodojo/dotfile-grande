@@ -137,6 +137,12 @@ git add .
 git commit -c ORIG_HEAD
 ```
 
+## Rebase on master and update branch with changes from master
+
+```bash
+git checkout master && git pull && git checkout branch-name-goes-here && git rebase master
+```
+
 ## Add an existing project to an new repository
 
 1. Create a new repository in GitHub by clicking the `+` symbol in the top right corner and selecting `New Repository`.
