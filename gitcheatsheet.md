@@ -175,6 +175,13 @@ git clean -f
 git clean -f -d
 ```
 
+## Stop tracking a file (if it existed before it was added to the .gitignore)
+
+```bash
+git rm file-name-goes-here --cached
+git commit -m 'stopped tracking file-name-goes-here'
+```
+
 ## Manage remote repositories
 
 #### Change remote repositories using ssh
