@@ -143,6 +143,12 @@ git commit -c ORIG_HEAD
 git checkout master && git pull && git checkout branch-name-goes-here && git rebase master
 ```
 
+## Reset branch to state prior to failed merge
+
+```bash
+git reset --merge
+```
+
 ## Add an existing project to an new repository
 
 1. Create a new repository in GitHub by clicking the `+` symbol in the top right corner and selecting `New Repository`.
