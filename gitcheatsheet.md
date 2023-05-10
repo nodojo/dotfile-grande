@@ -4,7 +4,7 @@
 
 #### List only local branches
 
-```bash
+```
 git branch
 ```
 
