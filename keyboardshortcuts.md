@@ -180,6 +180,16 @@ cmd + option + l
 cmd + ,
 ```
 
+**Open command palette:**
+```
+cmd + shift + p
+```
+
+**Zoom in/Zoom out:**
+```
+cmd + =, cmd + -
+```
+
 **Collapse selection (visual studio?):**
 ```
 ctrl + m, ctrl + h
