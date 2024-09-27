@@ -42,6 +42,11 @@ go test ./... -v
 go test ./... -v -count=1
 ```
 
+### Run all tests, without cached results, and check for race conditions
+```
+go test ./... -v -count=1 --race
+```
+
 ### To fix the error: File is not goimports-ed (goimports)
 ```
 gofmt -w yourfile.go
