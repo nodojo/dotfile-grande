@@ -5,47 +5,56 @@
  === ==== ===  === ===  === ===  === ==  === ===  ===
  ===  ===  ======  =======   ======  ======   ======
 ------------------------------------------------------------>
+# Go Commands
 
-# **Go Commands for the Terminal**
-
-**To fix the error: File is not goimports-ed (goimports):**
+### Install Go
 ```
-$ gofmt -w yourfile.go
-```
-
-**Get/Update go module:**
-```
-$ go get github.com/username/reponame
+brew install go
 ```
 
-**Install go:**
+### Update Go if it's located outside of the GOPATH
 ```
-$ brew install go
-```
-
-**Update go if it's located outside of the GOPATH:**
-```
-$ brew upgrade go
+brew upgrade go
 ```
 
-**Output go env variable paths to console:**
+### Output Go env variable paths to console
 ```
-$ go env
-```
-
-**Find out if the function you're calling is a loop is inlined:**
-```
-$ go build -gcflags -m
+go env
 ```
 
->## Various Additional Notes
+### Get/Update Go module
+```
+go get github.com/username/reponame
+```
 
-**Enable the use of go modules in GoLand:**
+### Run by file name
+```
+go run main.go
+```
+
+### Run all tests
+```
+go test ./... -v
+```
+
+### To fix the error: File is not goimports-ed (goimports)
+```
+gofmt -w yourfile.go
+```
+
+### Find out if the function you're calling is a loop is inlined
+```
+go build -gcflags -m
+```
+
+## Additional Notes
+
+### Enable the use of Go modules in GoLand
 ```
 GoLand > Preferences > Go > Go Modules(vgo)
 ```
 
-**Force VS Code to reinstall its tools:**
+### Force VS Code to reinstall its tools
 ```
 cmd + shift + p
 select Go: Install and Update Tools
