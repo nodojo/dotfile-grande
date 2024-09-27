@@ -37,6 +37,11 @@ go run main.go
 go test ./... -v
 ```
 
+### Run all tests, but make sure results are not from cache
+```
+go test ./... -v -count=1
+```
+
 ### To fix the error: File is not goimports-ed (goimports)
 ```
 gofmt -w yourfile.go
