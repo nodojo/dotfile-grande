@@ -8,12 +8,6 @@ _  / / / /_/ / /_/ / / /_/ /___  / / /_/ /
 ------------------------------------------------------------>
 
 
-# Useful Links
+# Resources
 
 - [ASCII Table](https://ss64.com/ascii.html)
-
-[**75 Best power user tools for macOS as of 2019**](https://www.slant.co/topics/523/~best-power-user-tools-for-macos)
-
-* See "Set system to default to Homebrew installed programs"
-
-* Get terminal schemes at: mbadolato/iTerm2-Color-Schemes
