@@ -151,6 +151,7 @@ git config --global color.status.changed "cyan normal bold"
    
 ## Resources
 
+- [An A-Z Index of Windows PowerShell commands](https://ss64.com/ps/)
 - [Windows PowerShell Commands Cheat Sheet](https://www.addictivetips.com/net-admin/powershell-commands/)
 - [Microsoft PowerShell Documentation](https://learn.microsoft.com/en-us/powershell/scripting/overview?view=powershell-5.1)
 - [PowerShell Notes for Professional Book](https://goalkicker.com/PowerShellBook/)
