@@ -10,4 +10,17 @@ _  / / / /_/ / /_/ / / /_/ /___  / / /_/ /
 
 # Resources
 
+- [Unit Conversion Tool](https://ss64.com/convert.html)
+  
+  Convert between Bytes, KB, MB, GB, TB and KiB, MiB, GiB, TiB. Convert between Binary, Decimal, Hex and Base 36.
+  
+- [Number Conversion Tools](https://www.rapidtables.com/convert/number/index.html)
+
+  Includes instructions and examples.
+
+- [Color Conversion Tool](https://www.rapidtables.com/convert/color/index.html)
+
+  Includes instructions and examples.
+  
+- [Image Converters](https://www.rapidtables.com/convert/image/index.html)
 - [ASCII Table](https://ss64.com/ascii.html)
