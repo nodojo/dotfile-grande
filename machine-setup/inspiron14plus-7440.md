@@ -47,9 +47,20 @@ winget install AgileBits.1Password
 winget install Microsoft.Teams
 ```
 
+## Install NVM for Windows
+
+⚠️ IF NODE.JS IS ALREADY INSTALLED ON YOUR MACHINE, IT MUST BE UNINSTALLED BEFORE PROCEEDING.
+
+1. Navigate to the [nvm-windows](https://github.com/coreybutler/nvm-windows) repository and click `Download Now!`
+2. Find the lastest version and click `nvm-setup.exe` to download.
+3. Locate and run the installer (`nvm-setup.exe`) you just downloaded.
+4. Follow the steps in the installation wizard (using the wizard's default suggestions is typically appropriate).
+5. Open (or close and reopen) PowerShell and run `nvm -v` to confirm the installation.
+
 ## Resources
 
 - [How I've set up my new Windows development environment in 2022](https://timdeschryver.dev/blog/how-i-have-set-up-my-new-windows-development-environment-in-2022) (10.23.2023)
 - [Rebuilding My Windows Development Environment](https://jasontaylor.dev/rebuilding-my-windows-development-environment/) (11.11.2022)
+- [NVM for Windows – How to Download and Install Node Version Manager in Windows 10](https://www.freecodecamp.org/news/nvm-for-windows-how-to-download-and-install-node-version-manager-in-windows-10/) (08.11.2022)
 
 
