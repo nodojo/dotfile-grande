@@ -46,3 +46,10 @@ winget install ExpressVPN.ExpressVPN
 winget install AgileBits.1Password
 winget install Microsoft.Teams
 ```
+
+## Resources
+
+- [How I've set up my new Windows development environment in 2022](https://timdeschryver.dev/blog/how-i-have-set-up-my-new-windows-development-environment-in-2022) (10.23.2023)
+- [Rebuilding My Windows Development Environment](https://jasontaylor.dev/rebuilding-my-windows-development-environment/) (11.11.2022)
+
+
