@@ -31,5 +31,8 @@ winget install Google.Chrome             # stable, fully tested - updated every 
 # winget install Google.Chrome.Dev       # in-progress features, in-progress testing, medium risk - updated 1-2 times weekly
 # winget install Google.Chrome.Canary    # bleeding edge, has not been tested, high risk - updated daily
 
+winget install ExpressVPN.ExpressVPN
+
 winget install Microsoft.VisualStudio.2022.Professional
+winget install Microsoft.VisualStudioCode
 ```
