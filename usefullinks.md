@@ -8,7 +8,9 @@ _  / / / /_/ / /_/ / / /_/ /___  / / /_/ /
 ------------------------------------------------------------>
 
 
-# **Useful Links**
+# Useful Links
+
+- [ASCII Table](https://ss64.com/ascii.html)
 
 [**75 Best power user tools for macOS as of 2019**](https://www.slant.co/topics/523/~best-power-user-tools-for-macos)
 
