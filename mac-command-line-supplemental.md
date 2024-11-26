@@ -7,8 +7,3 @@ This command resets the folder settings across the entire machine. When the comm
 ```sh
 sudo find / -name .DS_Store -delete; killall Finder
 ```
-
-## Resources
-
-- [An A-Z Index of Apple macOS (bash) commands](https://ss64.com/mac/index.html)
-- [What are the best power user tools for macOS?](https://www.slant.co/topics/523/~best-power-user-tools-for-macos)
