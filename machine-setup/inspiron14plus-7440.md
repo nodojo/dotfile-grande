@@ -1,11 +1,11 @@
 # Inspiron 14 Plus 7440 - Development Setup
 
-## Install Applications
+## Find & Install Applications
 
-Ex: Search ExpressVPN
+Example: Search ExpressVPN
 
 ```
-winget search "expressvpn"
+winget search expressvpn
 ```
 
 ```
@@ -17,8 +17,19 @@ ExpressVPN XP9M14XF781P6R        Unknown   msstore
 ExpressVPN ExpressVPN.ExpressVPN 12.94.0.2 winget
 ```
 
-Ex: Install ExpressVPN
+Example: Install ExpressVPN
 
 ```
 winget install ExpressVPN.ExpressVPN
+```
+
+## Installation Scripts
+
+```
+winget install Google.Chrome             # stable, fully tested - updated every 2-3 weeks
+# winget install Google.Chrome.Beta      # new features, minimal risk - updated every week (approx.), generally a month ahead of stable channel 
+# winget install Google.Chrome.Dev       # in-progress features, in-progress testing, medium risk - updated 1-2 times weekly
+# winget install Google.Chrome.Canary    # bleeding edge, has not been tested, high risk - updated daily
+
+winget install Microsoft.VisualStudio.2022.Professional
 ```
