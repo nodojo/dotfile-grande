@@ -364,60 +364,7 @@ cmd + ctrl + media THEN eject
 cmd + ctrl + option + pwr
 ```
 
-
-**Toggle:**
-```
-cmd +
-```
-
-**Toggle:**
-```
-cmd +
-```
-
-**Toggle:**
-```
-cmd +
-```
-
-**Toggle:**
-```
-cmd +
-```
-
-**Toggle:**
-```
-cmd +
-```
-
-**Toggle:**
-```
-cmd +
-```
-
-**Toggle:**
-```
-cmd +
-```
-
-**Toggle:**
-```
-cmd +
-```
-
-
-**Toggle:**
-```
-cmd +
-```
-
-**Toggle:**
-```
-cmd +
-```
 <!--
-
-
             <h2>Finder and system shortcuts</h2>
             <div><ul>
 <li><strong>Command-D</strong>: Duplicate the selected files.</li>
@@ -569,6 +516,4 @@ cmd +
 <li><a href="https://support.apple.com/kb/HT203085">Use a spoken command for a keyboard shortcut</a></li>
 </ul>
 </div>
-
-
  -->
