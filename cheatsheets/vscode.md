@@ -1,10 +1,12 @@
 # VS Code Cheat Sheet
 
-## Shortcuts
+## Windows Shortcuts
 
-### Linux
+- Keep file open: `ctrl + K` then `enter`
 
-#### General
+## Linux Shortcuts
+
+### General
 
 - `Ctrl`+`Shift`+`P`, `F1`:  Show Command Palette
 - `Ctrl`+`P`: Quick Open, Go to File
@@ -13,7 +15,7 @@
 - `Ctrl`+`,`: User Settings
 - `Ctrl`+`K`, `Ctrl`+`S`: Keyboard Shortcuts
 
-#### Basic editing
+### Basic editing
 
 - `Ctrl`+`X`: Cut line (empty selection)
 - `Ctrl`+`C`: Copy line (empty selection)
