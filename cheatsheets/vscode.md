@@ -2,7 +2,10 @@
 
 ## Windows Shortcuts
 
+- Search by file name: `ctrl + P`
+- Search all files for occurrence: `ctrl + shift + F`
 - Keep file open: `ctrl + K` then `enter`
+- Toggle terminal: <code>ctrl + \`</code>
 
 ## Linux Shortcuts
 
