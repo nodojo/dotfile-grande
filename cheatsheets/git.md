@@ -234,6 +234,8 @@ git clean -f -d
 
 ## Stop tracking a file (if it existed before it was added to the .gitignore)
 
+This is useful when you want to add a file to your `.gitignore` that is already being tracked by version control.
+
 ```bash
 git rm file-name-goes-here --cached
 git commit -m 'stopped tracking file-name-goes-here'
