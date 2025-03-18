@@ -116,6 +116,7 @@ defaults write com.apple.finder NewWindowTargetPath -string "file://${HOME}"
 
 ```sh
 brew install --cask 1password
+brew install --cask expressvpn
 brew install --cask firefox
 brew install --cask google-chrome
 brew install --cask iterm2
