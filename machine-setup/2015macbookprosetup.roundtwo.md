@@ -121,6 +121,7 @@ brew install --cask firefox
 brew install --cask google-chrome
 brew install --cask iterm2
 brew install --cask libreoffice
+brew install --cask slack
 brew install --cask spectacle
 brew install --cask visual-studio-code
 brew install --cask vlc
