@@ -141,6 +141,16 @@ Recursively delete `.DS_Store` files
 find . -type f -name '.DS_Store' -ls -delete
 ```
 
+Add custom message to login screen
+```sh
+sudo defaults write /Library/Preferences/com.apple.loginwindow LoginwindowText "Your Message"
+```
+
+Change login screen background
+```sh
+sudo defaults write /Library/Preferences/com.apple.loginwindow DesktopPicture "/Library/Desktop Pictures/Aqua Blue.jpg"
+```
+
 ## Install Homebrew
 
 ```sh
