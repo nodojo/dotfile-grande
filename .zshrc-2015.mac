@@ -1,26 +1,14 @@
 
 ##################################################################################################
-# ENVIRONMENT VARIABLES
+# ENVIRONMENT VARIABLES 
 ##################################################################################################
 
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 export ZSH="$HOME/.oh-my-zsh"
-
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
-# golang environment variables
 export GOPATH=$HOME/go
+# export GOPATH=$HOME/workspace
 export GOBIN=$GOPATH/bin
 export PATH=${PATH}:${GOBIN}
-
-# the brew ruby path
-# echo 'export PATH="/usr/local/opt/ruby/bin:$PATH"' >> ~/.zshrc
-# echo 'export PATH="$HOME/.gem/ruby/2.6.0/bin:$PATH"' >> ~/.zshrc
-#export PATH=/usr/local/opt/ruby/bin:$PATH
-#export PATH=$HOME/.gem/ruby/2.6.0/bin:$PATH
-
 
 ##################################################################################################
 # THEME
@@ -36,47 +24,33 @@ POWERLEVEL9K_TIME_FORMAT="%t"
 POWERLEVEL9K_DATE_FORMAT="%W"
 POWERLEVEL9K_DATE_ICON=""
 
-# Set name of the theme to load - if set to "random", it will load a random theme each time oh-my-zsh
-# is loaded, in which case, to know which specific one was loaded, run: echo $RANDOM_THEME
-# See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-#ZSH_THEME="robbyrussell"
-
-# Set list of themes to pick from when loading at random. Setting this variable when ZSH_THEME=random
-# will cause zsh to load a theme from this variable instead of looking in $ZSH/themes/
-# If set to an empty array, this variable will have no effect.
-# ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
-
-
 ##################################################################################################
 # ALIAS DEFINITIONS
 ##################################################################################################
 
-# reload/refresh .zshrc configs
+# open .zshrc file
+alias zshrc='open ~/.zshrc'
+
+# reload/Refresh .zshrc configs
 alias reload='source ~/.zshrc'
 
 # clear terminal screen
-alias cl=clear
+alias cl='clear'
+alias cls='clear'
 
-# open vs code
+# open VS Code
 alias vs='/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code .'
 
-
-##################################################################################################
-# GIT - ALIAS DEFINITIONS
-##################################################################################################
-
-# commit with wip commit message
-alias wip='git add . && git commit -m "wip"'
-
-# reset all changes
-alias nah="git reset --hard && git clean -df"
-
-# add, commit, and push changes
+# commit and push (no quotes necessary on commit message)
+# example usage: $ gcp this is the commit message
 function gcp() {
   git add .
   git commit -a -m "$*"
   git push
 }
+
+# quick commit with wip message
+alias wip='git add . && git commit -m "wip"'
 
 # checkout and pull master
 alias gcm='git checkout master && git pull'
@@ -94,63 +68,31 @@ function dlocal() {
 # checkout master
 alias cmas='git checkout master'
 
-
 ##################################################################################################
-# CLI TOOLS - COMMANDS & ALIAS DEFINTIONS
+# INSTALLATIONS
 ##################################################################################################
 
-# Open z (jump to most used directories)
-#. /usr/local/etc/profile.d/z.sh
+# open GoLand
+#alias goland='/usr/local/bin/goland'
 
 # exa is like the ls command on steroids
 #alias exals='exa --all --long --color=always --group-directories-first'
 
-# Bookmark manager
-# alias b='buku --suggest'
-
+# Open z (jump to most used directories)
+#. /usr/local/etc/profile.d/z.sh
 
 ##################################################################################################
 # LOAD OH-MY-ZSH
 ##################################################################################################
-
 source $ZSH/oh-my-zsh.sh
-
 
 ##################################################################################################
 # PRINT SUCCESS MESSAGE
 ##################################################################################################
-
-echo "HOME (root directory):" $HOME
-echo "PATH:" $PATH
+echo "Root Directory (HOME):" $HOME
+#echo "PATH Env. Variable:" $PATH
 echo "Successfully loaded .zshrc file..."
 
-
-##################################################################################################
-# NOTES GENERATED DURING ZSH INSTALLATION
-##################################################################################################
-
-# Uncomment the following line to disable auto-setting terminal title.
-# DISABLE_AUTO_TITLE="true"
-
-# Uncomment the following line to enable command auto-correction.
-# ENABLE_CORRECTION="true"
-
-# Uncomment the following line to display red dots whilst waiting for completion.
-# Caution: this setting can cause issues with multiline prompts (zsh 5.7.1 and newer seem to work)
-# See https://github.com/ohmyzsh/ohmyzsh/issues/5765
-# COMPLETION_WAITING_DOTS="true"
-
-# Would you like to use another custom folder than $ZSH/custom?
-# ZSH_CUSTOM=/path/to/new-custom-folder
-
-# Which plugins would you like to load?
-# Standard plugins can be found in $ZSH/plugins/
-# Custom plugins may be added to $ZSH_CUSTOM/plugins/
-# Example format: plugins=(rails git textmate ruby lighthouse)
-# Add wisely, as too many plugins slow down shell startup.
-#plugins=(git)
-
-
-##################################################################################################
-# END OF FILE
-##################################################################################################
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
