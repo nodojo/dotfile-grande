@@ -126,6 +126,16 @@ sudo scutil --set LocalHostName "newhostname" && \
 sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "newhostname"
 ```
 
+Set static IP address
+```sh
+networksetup -setmanual "Ethernet" 192.168.2.100 255.255.255.0 192.168.2.1
+```
+
+Ping a host to test availability
+```sh
+ping -o github.com
+```
+
 ## Install Homebrew
 
 ```sh
