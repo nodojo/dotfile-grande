@@ -111,6 +111,21 @@ Set sidebar icon size to medium
 defaults write -g NSTableViewDefaultSizeMode -int 2
 ```
 
+## Miscellaneous
+
+Save to disk by default (not iCloud)
+```sh
+defaults write -g NSDocumentSaveNewDocumentsToCloud -bool false
+```
+
+Set computer name/host name
+```sh
+sudo scutil --set ComputerName "newhostname" && \
+sudo scutil --set HostName "newhostname" && \
+sudo scutil --set LocalHostName "newhostname" && \
+sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "newhostname"
+```
+
 ## Install Homebrew
 
 ```sh
