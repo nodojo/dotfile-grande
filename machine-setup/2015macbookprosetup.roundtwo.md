@@ -136,6 +136,11 @@ Ping a host to test availability
 ping -o github.com
 ```
 
+Recursively delete `.DS_Store` files
+```sh
+find . -type f -name '.DS_Store' -ls -delete
+```
+
 ## Install Homebrew
 
 ```sh
