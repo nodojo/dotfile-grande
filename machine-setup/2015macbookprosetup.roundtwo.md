@@ -106,6 +106,11 @@ defaults write com.apple.finder NewWindowTarget -string "PfLo" && \
 defaults write com.apple.finder NewWindowTargetPath -string "file://${HOME}"
 ```
 
+Set sidebar icon size to medium
+```sh
+defaults write -g NSTableViewDefaultSizeMode -int 2
+```
+
 ## Install Homebrew
 
 ```sh
