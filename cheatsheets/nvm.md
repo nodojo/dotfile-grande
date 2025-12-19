@@ -6,6 +6,12 @@ Install Node version
 nvm install 20.18.0
 ```
 
+Install latest stable Node version
+
+```node
+nvm install --lts
+```
+
 Select Node version to use
 
 ```node
@@ -16,4 +22,16 @@ Set Node version as default (this persists the version between shell sessions)
 
 ```node
 nvm alias default 20.18.0
+```
+
+List all remotely available Node versions
+
+```node
+nvm ls-remote
+```
+
+List all Node versions available locally (already installed on your machine)
+
+```node
+nvm ls
 ```
