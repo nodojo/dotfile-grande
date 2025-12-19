@@ -1,6 +1,12 @@
 # NVM Cheat Sheet
 
-Install Node version
+Display active Node version
+
+```node
+node --version
+```
+
+Install a Node version
 
 ```node
 nvm install 20.18.0
@@ -35,3 +41,10 @@ List all Node versions available locally (already installed on your machine)
 ```node
 nvm ls
 ```
+
+Remove a locally installed Node version
+
+```node
+nvm uninstall 20.18.0
+```
+
