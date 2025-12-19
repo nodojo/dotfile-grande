@@ -30,6 +30,12 @@ Set Node version as default (this persists the version between shell sessions)
 nvm alias default 20.18.0
 ```
 
+Set Node back to lastest version
+
+```node
+nvm alias default node
+```
+
 List all remotely available Node versions
 
 ```node
