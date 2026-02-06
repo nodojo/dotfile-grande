@@ -17,3 +17,7 @@
    ```ps1
    shutdown /s /t 0
    ```
+
+### RESOURCES
+
+- [Keyboard shortcuts in Windows 11  |  Microsoft Support](https://support.microsoft.com/en-gb/windows/keyboard-shortcuts-in-windows-dcc61a57-8ff0-cffe-9796-cb9706c75eec)
