@@ -4,22 +4,27 @@
 # tap "VasylRomanets/spinpacks" # themed spinner verb packs for Claude Code
 
 # ── Brew: Essential CLI tools ─────────────────────────────────────────────────
-brew "fzf"                          # fuzzy finder for files, history, and more
-brew "gh"                           # official GitHub CLI
-brew "git"                          # version control
+brew install fzf                    # fuzzy finder for files, history, and more
+brew install gh                     # official GitHub CLI
+brew install git                    # version control
 brew "git-delta"                    # syntax-highlighting pager for git diffs
 brew "git-filter-repo"              # rewrite git history (replaces BFG)
 brew "git-lfs"                      # git large file storage extension
-brew "jq"                           # JSON processor
+brew install jq                     # JSON processor
 brew "mas"                          # CLI for the Mac App Store
 brew "powerlevel10k"                # Zsh prompt theme
 brew "ripgrep"                      # ultra-fast recursive grep
 brew "wifi-password"                # show the password for the connected Wi-Fi network
+brew install wget
 brew "zoxide"                       # smarter cd that learns your most-used directories
-brew "zsh"                          # the Z shell itself
-brew "zsh-autosuggestions"          # fish-like command suggestions from history
-brew "zsh-history-substring-search" # arrow-key history search by substring
-brew "zsh-syntax-highlighting"      # highlight commands as you type
+brew install zsh                              # the Z shell itself
+brew install zsh-autocomplete
+brew install zsh-autosuggestions              # fish-like command suggestions from history
+brew install zsh-fast-syntax-highlighting
+brew install zsh-git-prompt
+brew install zsh-history-substring-search     # arrow-key history search by substring  
+brew install zsh-syntax-highlighting          # highlight commands as you type
+brew install zsh-you-should-use
 
 # ── Brew: Fun (comment out this whole section to skip) ────────────────────────
 brew "cbonsai"                 # grow a bonsai tree
