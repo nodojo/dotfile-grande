@@ -1,0 +1,68 @@
+# USE WHAT YOU WANT, COMMENT OUT WHAT INTIMIDATES YOU
+
+# ── Tap ───────────────────────────────────────────────────────────────────────
+# tap "VasylRomanets/spinpacks" # themed spinner verb packs for Claude Code
+
+# ── Brew: Essential CLI tools ─────────────────────────────────────────────────
+brew "fzf"                          # fuzzy finder for files, history, and more
+brew "gh"                           # official GitHub CLI
+brew "git"                          # version control
+brew "git-delta"                    # syntax-highlighting pager for git diffs
+brew "git-filter-repo"              # rewrite git history (replaces BFG)
+brew "git-lfs"                      # git large file storage extension
+brew "jq"                           # JSON processor
+brew "mas"                          # CLI for the Mac App Store
+brew "powerlevel10k"                # Zsh prompt theme
+brew "ripgrep"                      # ultra-fast recursive grep
+brew "wifi-password"                # show the password for the connected Wi-Fi network
+brew "zoxide"                       # smarter cd that learns your most-used directories
+brew "zsh"                          # the Z shell itself
+brew "zsh-autosuggestions"          # fish-like command suggestions from history
+brew "zsh-history-substring-search" # arrow-key history search by substring
+brew "zsh-syntax-highlighting"      # highlight commands as you type
+
+# ── Brew: Fun (comment out this whole section to skip) ────────────────────────
+brew "cbonsai"                 # grow a bonsai tree
+brew "cmatrix"                 # matrix rain animation
+brew "spinpacks"               # themed spinner verb packs for Claude Code
+brew "tetris"                  # good old tetris
+
+# ── Cask: Fonts ───────────────────────────────────────────────────────────────
+cask "font-hack-nerd-font"     # pretty monospace font
+cask "font-meslo-lg-nerd-font" # my main terminal & editor font (MesloLGS NF)
+
+# ── Cask ──────────────────────────────────────────────────────────────────────
+cask "claude-code"            # AI coding assistant
+cask "cleanmymac"             # system cleaner and optimizer
+cask "ghostty"                # my favourite terminal emulator
+cask "git-credential-manager" # cross-platform git credential storage
+cask "google-chrome"          # web browser
+cask "hammerspoon"            # lua-driven macOS automation and scripting
+cask "obsidian"               # markdown-based personal knowledge base
+cask "visual-studio-code"     # code editor
+cask "zed"                    # fast code editor
+
+# ── VS Code ───────────────────────────────────────────────────────────────────
+vscode "catppuccin.catppuccin-vsc"            # catppuccin pastel color theme
+vscode "catppuccin.catppuccin-vsc-icons"      # catppuccin file icon theme
+vscode "editorconfig.editorconfig"            # editorconfig support
+vscode "esbenp.prettier-vscode"               # prettier code formatter
+vscode "foxundermoon.shell-format"            # shell script formatter
+vscode "mads-hartmann.bash-ide-vscode"        # bash language server integration
+vscode "mechatroner.rainbow-csv"              # syntax highlighting and editing for CSV/TSV
+vscode "ms-dotnettools.csdevkit"              # dev kit for C# and .NET
+vscode "ms-dotnettools.csharp"                # language support for C#
+vscode "ms-dotnettools.vscode-dotnet-runtime" # .NET runtime
+vscode "ms-vscode.mono-debug"                 # Mono debugger support
+vscode "neikeq.godot-csharp-vscode"           # Godot engine and C# support
+vscode "oderwat.indent-rainbow"               # colorize indentation levels
+vscode "visualstudiotoolsforunity.vstuc"      # Unity integration
+vscode "zhuangtongfa.material-theme"          # material color theme (One Dark Pro)
+
+
+
+
+
+
+
+
