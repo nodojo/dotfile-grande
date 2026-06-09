@@ -53,6 +53,7 @@ brew install --cask ghostty
 brew install --cask github
 brew install --cask obsidian
 brew install --cask visual-studio-code
+brew install --cask rectangle
 
 # ── VS Code ───────────────────────────────────────────────────────────────────
 vscode "catppuccin.catppuccin-vsc"            # catppuccin pastel color theme
